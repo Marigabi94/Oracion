@@ -2,7 +2,6 @@
   background-color: rgb(238, 225, 225);
 }
 .foto {
-  width: 12rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -49,6 +48,9 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
+  .foto {
+    width: 12rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,5 +60,8 @@
   }
   .card {
     margin: 5%;
+  }
+  .foto {
+    width: 9rem;
   }
 }
