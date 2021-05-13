@@ -1,156 +1,157 @@
-#Creative Commons AtribuciÛn/Reconocimiento-NoComercial-CompartirIgual 4.0 Licencia P˙blica Internacional ó CC BY-NC-SA 4.0
+[https://oracion-8ef29.web.app/](https://oracion-8ef29.web.app/)
+#Creative Commons Atribuci√≥n/Reconocimiento-NoComercial-CompartirIgual 4.0 Licencia P√∫blica Internacional ‚Äî CC BY-NC-SA 4.0
 ***
 
-Al ejercer los Derechos Licenciados (definidos a continuaciÛn), Usted acepta y acuerda estar obligado por los tÈrminos y condiciones de esta Licencia Internacional P˙blica de AtribuciÛn/Reconocimiento-NoComercial-CompartirIgual 4.0 de Creative Commons ("Licencia P˙blica"). En la medida en que esta Licencia P˙blica pueda ser interpretada como un contrato, a Usted se le otorgan los Derechos Licenciados en consideraciÛn a su aceptaciÛn de estos tÈrminos y condiciones, y el Licenciante le concede a Usted tales derechos en consideraciÛn a los beneficios que el Licenciante recibe por poner a disposiciÛn el Material Licenciado bajo estos tÈrminos y condiciones.
+Al ejercer los Derechos Licenciados (definidos a continuaci√≥n), Usted acepta y acuerda estar obligado por los t√©rminos y condiciones de esta Licencia Internacional P√∫blica de Atribuci√≥n/Reconocimiento-NoComercial-CompartirIgual 4.0 de Creative Commons ("Licencia P√∫blica"). En la medida en que esta Licencia P√∫blica pueda ser interpretada como un contrato, a Usted se le otorgan los Derechos Licenciados en consideraci√≥n a su aceptaci√≥n de estos t√©rminos y condiciones, y el Licenciante le concede a Usted tales derechos en consideraci√≥n a los beneficios que el Licenciante recibe por poner a disposici√≥n el Material Licenciado bajo estos t√©rminos y condiciones.
 
-##SecciÛn 1 ñ Definiciones.
+##Secci√≥n 1 ‚Äì Definiciones.
 
->a. **Material Adaptado** es aquel material protegido por Derechos de Autor y Derechos Similares que se deriva o se crea en base al Material Licenciado y en el cual el Material Licenciado se traduce, altera, arregla, transforma o modifica de manera tal que dicho resultado sea de aquellos que requieran autorizaciÛn de acuerdo con los Derechos de Autor y Derechos Similares que ostenta el Licenciante. A los efectos de esta Licencia P˙blica, cuando el Material Licenciado se trate de una obra musical, una interpretaciÛn o una grabaciÛn sonora, la sincronizaciÛn temporal de este material con una imagen en movimiento siempre producir· Material Adaptado.
+>a. **Material Adaptado** es aquel material protegido por Derechos de Autor y Derechos Similares que se deriva o se crea en base al Material Licenciado y en el cual el Material Licenciado se traduce, altera, arregla, transforma o modifica de manera tal que dicho resultado sea de aquellos que requieran autorizaci√≥n de acuerdo con los Derechos de Autor y Derechos Similares que ostenta el Licenciante. A los efectos de esta Licencia P√∫blica, cuando el Material Licenciado se trate de una obra musical, una interpretaci√≥n o una grabaci√≥n sonora, la sincronizaci√≥n temporal de este material con una imagen en movimiento siempre producir√° Material Adaptado.
 
->b. **Licencia de adaptador** es aquella licencia que Usted aplica a Sus Derechos de Autor y Derechos Similares en Sus contribuciones consideradas como Material Adaptado de acuerdo con los tÈrminos y condiciones de esta Licencia P˙blica.
+>b. **Licencia de adaptador** es aquella licencia que Usted aplica a Sus Derechos de Autor y Derechos Similares en Sus contribuciones consideradas como Material Adaptado de acuerdo con los t√©rminos y condiciones de esta Licencia P√∫blica.
 
->c. **Una Licencia Compatible con BY-NC-SA** es aquella que aparece en la lista disponible en creativecommons.org/compatiblelicenses, aprobada por Creative Commons, como una licencia esencialmente equivalente a esta Licencia P˙blica.
+>c. **Una Licencia Compatible con BY-NC-SA** es aquella que aparece en la lista disponible en creativecommons.org/compatiblelicenses, aprobada por Creative Commons, como una licencia esencialmente equivalente a esta Licencia P√∫blica.
 
->d. **Derechos de Autor y Derechos Similares** son todos aquellos derechos estrechamente vinculados a los derechos de autor, incluidos, de manera enunciativa y no taxativa, los derechos sobre las interpretaciones, las emisiones, las grabaciones sonoras y los Derechos "Sui Generis" sobre Bases de Datos, sin importar cÛmo estos derechos se encuentren enunciados o categorizados. A los efectos de esta Licencia P˙blica, los derechos especificados en las secciones 2(b)(1)-(2) no se consideran Derechos de Autor y Derechos Similares.
+>d. **Derechos de Autor y Derechos Similares** son todos aquellos derechos estrechamente vinculados a los derechos de autor, incluidos, de manera enunciativa y no taxativa, los derechos sobre las interpretaciones, las emisiones, las grabaciones sonoras y los Derechos "Sui Generis" sobre Bases de Datos, sin importar c√≥mo estos derechos se encuentren enunciados o categorizados. A los efectos de esta Licencia P√∫blica, los derechos especificados en las secciones 2(b)(1)-(2) no se consideran Derechos de Autor y Derechos Similares.
 
->e. **Medidas TecnolÛgicas Efectivas** son aquellas medidas que, en ausencia de la debida autorizaciÛn, no pueden ser eludidas en virtud de las leyes que cumplen las obligaciones del artÌculo 11 del Tratado de la OMPI sobre Derecho de Autor adoptado el 20 de diciembre de 1996, y/o acuerdos internacionales similares.
+>e. **Medidas Tecnol√≥gicas Efectivas** son aquellas medidas que, en ausencia de la debida autorizaci√≥n, no pueden ser eludidas en virtud de las leyes que cumplen las obligaciones del art√≠culo 11 del Tratado de la OMPI sobre Derecho de Autor adoptado el 20 de diciembre de 1996, y/o acuerdos internacionales similares.
 
->f. **Excepciones y Limitaciones** son el uso justo (fair use), el trato justo (fair dealing) y/o cualquier otra excepciÛn o limitaciÛn a los Derechos de Autor y Derechos Similares que se apliquen al uso el Material Licenciado.
+>f. **Excepciones y Limitaciones** son el uso justo (fair use), el trato justo (fair dealing) y/o cualquier otra excepci√≥n o limitaci√≥n a los Derechos de Autor y Derechos Similares que se apliquen al uso el Material Licenciado.
 
->g. Los **Elementos de la Licencia** son los atributos que figuran en el nombre de la Licencia P˙blica de Creative Commons. Los Elementos de la Licencia de esta Licencia P˙blica son AtribuciÛn/Reconocimiento, NoComercial y CompartirIgual.
+>g. Los **Elementos de la Licencia** son los atributos que figuran en el nombre de la Licencia P√∫blica de Creative Commons. Los Elementos de la Licencia de esta Licencia P√∫blica son Atribuci√≥n/Reconocimiento, NoComercial y CompartirIgual.
 
->h. **Material Licenciado** es obra artÌstica o literaria, base de datos o cualquier otro material al cual el Licenciante aplicÛ esta Licencia P˙blica.
+>h. **Material Licenciado** es obra art√≠stica o literaria, base de datos o cualquier otro material al cual el Licenciante aplic√≥ esta Licencia P√∫blica.
 
->i. **Derechos Licenciados** son derechos otorgados a Usted bajo los tÈrminos y condiciones de esta Licencia P˙blica, los cuales se limitan a todos los Derechos de Autor y Derechos Similares que apliquen al uso del Material Licenciado y que el Licenciante tiene potestad legal para licenciar.
+>i. **Derechos Licenciados** son derechos otorgados a Usted bajo los t√©rminos y condiciones de esta Licencia P√∫blica, los cuales se limitan a todos los Derechos de Autor y Derechos Similares que apliquen al uso del Material Licenciado y que el Licenciante tiene potestad legal para licenciar.
 
->j. **Licenciante** es el individuo(s) o la entidad(es) que concede derechos bajo esta Licencia P˙blica.
+>j. **Licenciante** es el individuo(s) o la entidad(es) que concede derechos bajo esta Licencia P√∫blica.
 
->k. **NoComercial**, a los efectos de esta licencia, es que no se encuentre principalmente destinado o dirigido a obtener una ventaja comercial o una compensaciÛn monetaria. Para los propÛsitos de esta Licencia P˙blica, el intercambio de Material Licenciado por otro material sujeto a Derechos de Autor y Derechos Similares a travÈs de mecanismos de intercambio de archivos digitales o de medios similares, se considerar· como NoComercial siempre que no haya pago de una compensaciÛn monetaria en relaciÛn con el intercambio.
+>k. **NoComercial**, a los efectos de esta licencia, es que no se encuentre principalmente destinado o dirigido a obtener una ventaja comercial o una compensaci√≥n monetaria. Para los prop√≥sitos de esta Licencia P√∫blica, el intercambio de Material Licenciado por otro material sujeto a Derechos de Autor y Derechos Similares a trav√©s de mecanismos de intercambio de archivos digitales o de medios similares, se considerar√° como NoComercial siempre que no haya pago de una compensaci√≥n monetaria en relaci√≥n con el intercambio.
 
->l. **Compartir** significa proporcionar material al p˙blico por cualquier medio o procedimiento que requiera permiso conforme a los Derechos Licenciados, tales como la reproducciÛn, exhibiciÛn p˙blica, presentaciÛn p˙blica, distribuciÛn, difusiÛn, comunicaciÛn o importaciÛn, asÌ como tambiÈn su puesta a disposiciÛn, incluyendo formas en que el p˙blico pueda acceder al material desde un lugar y momento elegido individualmente por ellos.
+>l. **Compartir** significa proporcionar material al p√∫blico por cualquier medio o procedimiento que requiera permiso conforme a los Derechos Licenciados, tales como la reproducci√≥n, exhibici√≥n p√∫blica, presentaci√≥n p√∫blica, distribuci√≥n, difusi√≥n, comunicaci√≥n o importaci√≥n, as√≠ como tambi√©n su puesta a disposici√≥n, incluyendo formas en que el p√∫blico pueda acceder al material desde un lugar y momento elegido individualmente por ellos.
 
->m. **Derechos "Sui Generis" sobre Bases de Datos** son aquellos derechos diferentes a los derechos de autor, resultantes de la Directiva 96/9/EC del Parlamento Europeo y del Consejo, de 11 de marzo de 1996 sobre la protecciÛn jurÌdica de las bases de datos, en sus versiones modificadas y/o posteriores, asÌ como otros derechos esencialmente equivalentes en cualquier otra parte del mundo.
+>m. **Derechos "Sui Generis" sobre Bases de Datos** son aquellos derechos diferentes a los derechos de autor, resultantes de la Directiva 96/9/EC del Parlamento Europeo y del Consejo, de 11 de marzo de 1996 sobre la protecci√≥n jur√≠dica de las bases de datos, en sus versiones modificadas y/o posteriores, as√≠ como otros derechos esencialmente equivalentes en cualquier otra parte del mundo.
 
->n. **Usted** es el individuo o la entidad que ejerce los Derechos Licenciados en esta Licencia P˙blica. La palabra **Su** tiene un significado equivalente.
+>n. **Usted** es el individuo o la entidad que ejerce los Derechos Licenciados en esta Licencia P√∫blica. La palabra **Su** tiene un significado equivalente.
 
-##SecciÛn 2 ñ ¡mbito de AplicaciÛn.
+##Secci√≥n 2 ‚Äì √Åmbito de Aplicaci√≥n.
 
 >a. **Otorgamiento de la licencia.**
 
->>1\. Sujeto a los tÈrminos y condiciones de esta Licencia P˙blica, el Licenciante le otorga a Usted una licencia de car·cter global, gratuita, no transferible a terceros, no exclusiva e irrevocable para ejercer los Derechos Licenciados sobre el Material Licenciado para:
+>>1\. Sujeto a los t√©rminos y condiciones de esta Licencia P√∫blica, el Licenciante le otorga a Usted una licencia de car√°cter global, gratuita, no transferible a terceros, no exclusiva e irrevocable para ejercer los Derechos Licenciados sobre el Material Licenciado para:
 
 >>>A. reproducir y Compartir el Material Licenciado, en su totalidad o en parte, solamente para fines NoComerciales; y
 
 >>>B. producir, reproducir y Compartir Material Adaptado solamente para fines NoComerciales.
 
->>2\. *Excepciones y Limitaciones.* Para evitar cualquier duda, donde se apliquen Excepciones y Limitaciones al uso del Material Licenciado, esta Licencia P˙blica no ser· aplicable, y Usted no tendr· necesidad de cumplir con sus tÈrminos y condiciones.
+>>2\. *Excepciones y Limitaciones.* Para evitar cualquier duda, donde se apliquen Excepciones y Limitaciones al uso del Material Licenciado, esta Licencia P√∫blica no ser√° aplicable, y Usted no tendr√° necesidad de cumplir con sus t√©rminos y condiciones.
 
->>3\. *Vigencia.* La vigencia de esta Licencia P˙blica est· especificada en la secciÛn 6(a).
+>>3\. *Vigencia.* La vigencia de esta Licencia P√∫blica est√° especificada en la secci√≥n 6(a).
 
->>4\. *Medios y formatos; modificaciones tÈcnicas permitidas.* El Licenciante le autoriza a Usted a ejercer los Derechos Licenciados en todos los medios y formatos, actualmente conocidos o por crearse en el futuro, y a realizar las modificaciones tÈcnicas necesarias para ello. El Licenciante renuncia y/o se compromete a no hacer valer cualquier derecho o potestad para prohibirle a Usted realizar las modificaciones tÈcnicas necesarias para ejercer los Derechos Licenciados, incluyendo las modificaciones tÈcnicas necesarias para eludir las Medidas TecnolÛgicas Efectivas. A los efectos de esta Licencia P˙blica, la mera realizaciÛn de modificaciones autorizadas por esta secciÛn 2(a)(4) nunca produce Material Adaptado.
+>>4\. *Medios y formatos; modificaciones t√©cnicas permitidas.* El Licenciante le autoriza a Usted a ejercer los Derechos Licenciados en todos los medios y formatos, actualmente conocidos o por crearse en el futuro, y a realizar las modificaciones t√©cnicas necesarias para ello. El Licenciante renuncia y/o se compromete a no hacer valer cualquier derecho o potestad para prohibirle a Usted realizar las modificaciones t√©cnicas necesarias para ejercer los Derechos Licenciados, incluyendo las modificaciones t√©cnicas necesarias para eludir las Medidas Tecnol√≥gicas Efectivas. A los efectos de esta Licencia P√∫blica, la mera realizaci√≥n de modificaciones autorizadas por esta secci√≥n 2(a)(4) nunca produce Material Adaptado.
 
 >>5\. *Receptores posteriores.*
 
->>>A. *Oferta del Licenciante ñ Material Licenciado.* Cada receptor de Material Licenciado recibe autom·ticamente una oferta del Licenciante para ejercer los Derechos Licenciados bajo los tÈrminos y condiciones de esta Licencia P˙blica.
+>>>A. *Oferta del Licenciante ‚Äì Material Licenciado.* Cada receptor de Material Licenciado recibe autom√°ticamente una oferta del Licenciante para ejercer los Derechos Licenciados bajo los t√©rminos y condiciones de esta Licencia P√∫blica.
 
->>>B. *Oferta adicional por parte del Licenciante ñ Material Adaptado.* Cada receptor del Material Adaptado por Usted recibe autom·ticamente una oferta del Licenciante para ejercer los Derechos Licenciados en el Material Adaptado bajo las condiciones de la Licencia del Adaptador que Usted aplique.
->>>C. *Sin restricciones a receptores posteriores.* Usted no puede ofrecer o imponer ning˙n tÈrmino ni condiciÛn diferente o adicional, ni puede aplicar ninguna Medida TecnolÛgica Efectiva al Material Licenciado si haciÈndolo restringe el ejercicio de los Derechos Licenciados a cualquier receptor del Material Licenciado.
+>>>B. *Oferta adicional por parte del Licenciante ‚Äì Material Adaptado.* Cada receptor del Material Adaptado por Usted recibe autom√°ticamente una oferta del Licenciante para ejercer los Derechos Licenciados en el Material Adaptado bajo las condiciones de la Licencia del Adaptador que Usted aplique.
+>>>C. *Sin restricciones a receptores posteriores.* Usted no puede ofrecer o imponer ning√∫n t√©rmino ni condici√≥n diferente o adicional, ni puede aplicar ninguna Medida Tecnol√≥gica Efectiva al Material Licenciado si haci√©ndolo restringe el ejercicio de los Derechos Licenciados a cualquier receptor del Material Licenciado.
 
->>6\. *Sin endoso.* Nada de lo contenido en esta Licencia P˙blica constituye o puede interpretarse como un permiso para afirmar o implicar que Usted, o que Su uso del Material Licenciado, est· conectado, patrocinado, respaldado o reconocido con estatus oficial por el Licenciante u otros designados para recibir la AtribuciÛn/Reconocimiento seg˙n lo dispuesto en la secciÛn 3(a)(1)(A)(i).
+>>6\. *Sin endoso.* Nada de lo contenido en esta Licencia P√∫blica constituye o puede interpretarse como un permiso para afirmar o implicar que Usted, o que Su uso del Material Licenciado, est√° conectado, patrocinado, respaldado o reconocido con estatus oficial por el Licenciante u otros designados para recibir la Atribuci√≥n/Reconocimiento seg√∫n lo dispuesto en la secci√≥n 3(a)(1)(A)(i).
 
 >b. **Otros derechos.**
 
->>1\. Los derechos morales, tales como el derecho a la integridad, no est·n comprendidos bajo esta Licencia P˙blica ni tampoco los derechos de publicidad y privacidad ni otros derechos personales similares. Sin embargo, en la medida de lo posible, el Licenciante renuncia y/o se compromete a no hacer valer ninguno de estos derechos que ostenta como Licenciante, limit·ndose a lo necesario para que Usted pueda ejercer los Derechos Licenciados, pero no de otra manera.
+>>1\. Los derechos morales, tales como el derecho a la integridad, no est√°n comprendidos bajo esta Licencia P√∫blica ni tampoco los derechos de publicidad y privacidad ni otros derechos personales similares. Sin embargo, en la medida de lo posible, el Licenciante renuncia y/o se compromete a no hacer valer ninguno de estos derechos que ostenta como Licenciante, limit√°ndose a lo necesario para que Usted pueda ejercer los Derechos Licenciados, pero no de otra manera.
 
->>2\. Los derechos de patentes y marcas no son objeto de esta Licencia P˙blica.
+>>2\. Los derechos de patentes y marcas no son objeto de esta Licencia P√∫blica.
 
->>3\. En la medida de lo posible, el Licenciante renuncia al derecho de cobrarle regalÌas a Usted por el ejercicio de los Derechos Licenciados, ya sea directamente o a travÈs de una entidad de gestiÛn colectiva bajo cualquier esquema de licenciamiento voluntario, renunciable o no renunciable. En todos los dem·s casos, el Licenciante se reserva expresamente cualquier derecho de cobrar esas regalÌas, incluidos aquellos casos en los que el Material Licenciado sea utilizado para fines distintos a los NoComerciales.
+>>3\. En la medida de lo posible, el Licenciante renuncia al derecho de cobrarle regal√≠as a Usted por el ejercicio de los Derechos Licenciados, ya sea directamente o a trav√©s de una entidad de gesti√≥n colectiva bajo cualquier esquema de licenciamiento voluntario, renunciable o no renunciable. En todos los dem√°s casos, el Licenciante se reserva expresamente cualquier derecho de cobrar esas regal√≠as, incluidos aquellos casos en los que el Material Licenciado sea utilizado para fines distintos a los NoComerciales.
 
-##SecciÛn 3 ñ Condiciones de la Licencia.
+##Secci√≥n 3 ‚Äì Condiciones de la Licencia.
 
-Su ejercicio de los Derechos Licenciados est· expresamente sujeto a las condiciones siguientes.
+Su ejercicio de los Derechos Licenciados est√° expresamente sujeto a las condiciones siguientes.
 
->a. **AtribuciÛn/Reconocimiento.**
+>a. **Atribuci√≥n/Reconocimiento.**
 
 >>1\. Si Usted comparte el Material Licenciado (incluyendo en forma modificada), Usted debe:
 
 >>>A. Conservar lo siguiente si es facilitado por el Licenciante con el Material Licenciado:
 
->>>>i. identificaciÛn del creador o los creadores del Material Licenciado y de cualquier otra persona designada para recibir AtribuciÛn/Reconocimiento, de cualquier manera razonable solicitada por el Licenciante (incluyendo por seudÛnimo si este ha sido designado);
+>>>>i. identificaci√≥n del creador o los creadores del Material Licenciado y de cualquier otra persona designada para recibir Atribuci√≥n/Reconocimiento, de cualquier manera razonable solicitada por el Licenciante (incluyendo por seud√≥nimo si este ha sido designado);
 
 >>>>ii. un aviso sobre derecho de autor;
 
->>>>iii. un aviso que se refiera a esta Licencia P˙blica;
+>>>>iii. un aviso que se refiera a esta Licencia P√∫blica;
 
->>>>iv. un aviso que se refiera a la limitaciÛn de garantÌas;
-un URI o un hipervÌnculo al Material Licenciado en la medida razonablemente posible;
+>>>>iv. un aviso que se refiera a la limitaci√≥n de garant√≠as;
+un URI o un hiperv√≠nculo al Material Licenciado en la medida razonablemente posible;
 
->>>B. Indicar si Usted modificÛ el Material Licenciado y conservar una indicaciÛn de las modificaciones anteriores; e
+>>>B. Indicar si Usted modific√≥ el Material Licenciado y conservar una indicaci√≥n de las modificaciones anteriores; e
 
->>>C. Indicar que el Material Licenciado est· bajo esta Licencia P˙blica e incluir el texto, el URI o el hipervÌnculo a esta Licencia P˙blica.
+>>>C. Indicar que el Material Licenciado est√° bajo esta Licencia P√∫blica e incluir el texto, el URI o el hiperv√≠nculo a esta Licencia P√∫blica.
 
->>2\. Usted puede satisfacer las condiciones de la secciÛn 3(a)(1) de cualquier forma razonable seg˙n el medio, las maneras y el contexto en los cuales Usted Comparta el Material Licenciado. Por ejemplo, puede ser razonable satisfacer las condiciones facilitando un URI o un hipervÌnculo a un recurso que incluya la informaciÛn requerida.
+>>2\. Usted puede satisfacer las condiciones de la secci√≥n 3(a)(1) de cualquier forma razonable seg√∫n el medio, las maneras y el contexto en los cuales Usted Comparta el Material Licenciado. Por ejemplo, puede ser razonable satisfacer las condiciones facilitando un URI o un hiperv√≠nculo a un recurso que incluya la informaci√≥n requerida.
 
->>3\. Bajo requerimiento del Licenciante, Usted debe eliminar cualquier informaciÛn requerida por la secciÛn 3(a)(1)(A) en la medida razonablemente posible.
+>>3\. Bajo requerimiento del Licenciante, Usted debe eliminar cualquier informaci√≥n requerida por la secci√≥n 3(a)(1)(A) en la medida razonablemente posible.
 
 >b. **CompartirIgual.**
 
->>Adem·s de las condiciones de la secciÛn 3(a), si Usted Comparte Material Adaptado producido por Usted, tambiÈn aplican las condiciones siguientes.
+>>Adem√°s de las condiciones de la secci√≥n 3(a), si Usted Comparte Material Adaptado producido por Usted, tambi√©n aplican las condiciones siguientes.
 
->>>1\. La Licencia del Adaptador que Usted aplique debe ser una licencia de Creative Commons con los mismos Elementos de la Licencia, ya sea de esta versiÛn o una posterior, o una Licencia Compatible con la BY-NC-SA.
+>>>1\. La Licencia del Adaptador que Usted aplique debe ser una licencia de Creative Commons con los mismos Elementos de la Licencia, ya sea de esta versi√≥n o una posterior, o una Licencia Compatible con la BY-NC-SA.
 
->>>2\. Usted debe incluir el texto, el URI o el hipervÌnculo a la Licencia del Adaptador que aplique. Usted puede satisfacer esta condiciÛn de cualquier forma razonable seg˙n el medio, las maneras y el contexto en los cuales Usted Comparta el Material Adaptado.
+>>>2\. Usted debe incluir el texto, el URI o el hiperv√≠nculo a la Licencia del Adaptador que aplique. Usted puede satisfacer esta condici√≥n de cualquier forma razonable seg√∫n el medio, las maneras y el contexto en los cuales Usted Comparta el Material Adaptado.
 
->>>3\. Usted no puede ofrecer o imponer ning˙n tÈrmino o condiciÛn adicional o diferente, o aplicar ninguna Medida TecnolÛgica Efectiva al Material Adaptado que restrinja el ejercicio de los derechos concedidos en virtud de la Licencia de Adaptador que Usted aplique.
+>>>3\. Usted no puede ofrecer o imponer ning√∫n t√©rmino o condici√≥n adicional o diferente, o aplicar ninguna Medida Tecnol√≥gica Efectiva al Material Adaptado que restrinja el ejercicio de los derechos concedidos en virtud de la Licencia de Adaptador que Usted aplique.
 
-##SecciÛn 4 ñ Derechos "Sui Generis" sobre Bases de Datos.
+##Secci√≥n 4 ‚Äì Derechos "Sui Generis" sobre Bases de Datos.
 
 Cuando los Derechos Licenciados incluyan Derechos "Sui Generis" sobre Bases de Datos que apliquen a Su uso del Material Licenciado:
 
->a. para evitar cualquier duda, la secciÛn 2(a)(1) le concede a Usted el derecho a extraer, reutilizar, reproducir y Compartir todo o una parte sustancial de los contenidos de la base de datos solamente para fines NoComerciales;
+>a. para evitar cualquier duda, la secci√≥n 2(a)(1) le concede a Usted el derecho a extraer, reutilizar, reproducir y Compartir todo o una parte sustancial de los contenidos de la base de datos solamente para fines NoComerciales;
 
->b. si Usted incluye la totalidad o una parte sustancial del contenido de una base de datos en otra sobre la cual Usted ostenta Derecho "Sui Generis" sobre Bases de Datos, entonces ella (pero no sus contenidos individuales) se entender· como Material Adaptado para efectos de la secciÛn 3(b); y
+>b. si Usted incluye la totalidad o una parte sustancial del contenido de una base de datos en otra sobre la cual Usted ostenta Derecho "Sui Generis" sobre Bases de Datos, entonces ella (pero no sus contenidos individuales) se entender√° como Material Adaptado para efectos de la secci√≥n 3(b); y
 
->c. Usted debe cumplir con las condiciones de la secciÛn 3(a) si Usted Comparte la totalidad o una parte sustancial de los contenidos de la base de datos.
+>c. Usted debe cumplir con las condiciones de la secci√≥n 3(a) si Usted Comparte la totalidad o una parte sustancial de los contenidos de la base de datos.
 
-Para evitar dudas, esta secciÛn 4 complementa y no sustituye Sus obligaciones bajo esta Licencia P˙blica cuando los Derechos Licenciados incluyen otros Derechos de Autor y Derechos Similares.
+Para evitar dudas, esta secci√≥n 4 complementa y no sustituye Sus obligaciones bajo esta Licencia P√∫blica cuando los Derechos Licenciados incluyen otros Derechos de Autor y Derechos Similares.
 
-##SecciÛn 5 ñ ExenciÛn de GarantÌas y LimitaciÛn de Responsabilidad.
+##Secci√≥n 5 ‚Äì Exenci√≥n de Garant√≠as y Limitaci√≥n de Responsabilidad.
 
->**a. Salvo que el Licenciante se haya comprometido mediante un acuerdo por separado, en la medida de lo posible el Licenciante ofrece el Material Licenciado tal como es y tal como est· disponible y no se hace responsable ni ofrece garantÌas de ning˙n tipo respecto al Material Licenciado, ya sea de manera expresa, implÌcita, legal u otra. Esto incluye, de manera no taxativa, las garantÌas de tÌtulo, comerciabilidad, idoneidad para un propÛsito en particular, no infracciÛn, ausencia de vicios ocultos u otros defectos, la exactitud, la presencia o la ausencia de errores, sean o no conocidos o detectables. Cuando no se permita, totalmente o en parte, la declaraciÛn de ausencia de garantÌas, a Usted puede no aplic·rsele esta exclusiÛn.**
+>**a. Salvo que el Licenciante se haya comprometido mediante un acuerdo por separado, en la medida de lo posible el Licenciante ofrece el Material Licenciado tal como es y tal como est√° disponible y no se hace responsable ni ofrece garant√≠as de ning√∫n tipo respecto al Material Licenciado, ya sea de manera expresa, impl√≠cita, legal u otra. Esto incluye, de manera no taxativa, las garant√≠as de t√≠tulo, comerciabilidad, idoneidad para un prop√≥sito en particular, no infracci√≥n, ausencia de vicios ocultos u otros defectos, la exactitud, la presencia o la ausencia de errores, sean o no conocidos o detectables. Cuando no se permita, totalmente o en parte, la declaraci√≥n de ausencia de garant√≠as, a Usted puede no aplic√°rsele esta exclusi√≥n.**
 
->**b. En la medida de lo posible, en ning˙n caso el Licenciante ser· responsable ante Usted por ninguna teorÌa legal (incluyendo, de manera no taxativa, la negligencia) o de otra manera por cualquier pÈrdida, coste, gasto o daÒo directo, especial, indirecto, incidental, consecuente, punitivo, ejemplar u otro que surja de esta Licencia P˙blica o del uso del Material Licenciado, incluso cuando el Licenciante haya sido advertido de la posibilidad de tales pÈrdidas, costes, gastos o daÒos. Cuando no se permita la limitaciÛn de responsabilidad, ya sea totalmente o en parte, a Usted puede no aplic·rsele esta limitaciÛn.**
+>**b. En la medida de lo posible, en ning√∫n caso el Licenciante ser√° responsable ante Usted por ninguna teor√≠a legal (incluyendo, de manera no taxativa, la negligencia) o de otra manera por cualquier p√©rdida, coste, gasto o da√±o directo, especial, indirecto, incidental, consecuente, punitivo, ejemplar u otro que surja de esta Licencia P√∫blica o del uso del Material Licenciado, incluso cuando el Licenciante haya sido advertido de la posibilidad de tales p√©rdidas, costes, gastos o da√±os. Cuando no se permita la limitaci√≥n de responsabilidad, ya sea totalmente o en parte, a Usted puede no aplic√°rsele esta limitaci√≥n.**
 
->c. La renuncia de garantÌas y la limitaciÛn de responsabilidad descritas anteriormente deber·n ser interpretadas, en la medida de lo posible, como lo m·s prÛximo a una exenciÛn y renuncia absoluta a todo tipo de responsabilidad.
+>c. La renuncia de garant√≠as y la limitaci√≥n de responsabilidad descritas anteriormente deber√°n ser interpretadas, en la medida de lo posible, como lo m√°s pr√≥ximo a una exenci√≥n y renuncia absoluta a todo tipo de responsabilidad.
 
-##SecciÛn 6 ñ Vigencia y TerminaciÛn.
+##Secci√≥n 6 ‚Äì Vigencia y Terminaci√≥n.
 
->a. Esta Licencia P˙blica tiene una vigencia de aplicaciÛn igual al plazo de protecciÛn de los Derechos de Autor y Derechos Similares licenciados aquÌ. Sin embargo, si Usted incumple las condiciones de esta Licencia P˙blica, los derechos que se le conceden mediante esta Licencia P˙blica terminan autom·ticamente.
+>a. Esta Licencia P√∫blica tiene una vigencia de aplicaci√≥n igual al plazo de protecci√≥n de los Derechos de Autor y Derechos Similares licenciados aqu√≠. Sin embargo, si Usted incumple las condiciones de esta Licencia P√∫blica, los derechos que se le conceden mediante esta Licencia P√∫blica terminan autom√°ticamente.
 
->b. En aquellos casos en que Su derecho a utilizar el Material Licenciado se haya terminado conforme a la secciÛn 6(a), este ser· restablecido:
+>b. En aquellos casos en que Su derecho a utilizar el Material Licenciado se haya terminado conforme a la secci√≥n 6(a), este ser√° restablecido:
 
->>1\. autom·ticamente a partir de la fecha en que la violaciÛn sea subsanada, siempre y cuando esta se subsane dentro de los 30 dÌas siguientes a partir de Su descubrimiento de la violaciÛn; o
+>>1\. autom√°ticamente a partir de la fecha en que la violaci√≥n sea subsanada, siempre y cuando esta se subsane dentro de los 30 d√≠as siguientes a partir de Su descubrimiento de la violaci√≥n; o
 
 >>2\. tras el restablecimiento expreso por parte del Licenciante.
 
->Para evitar dudas, esta secciÛn 6(b) no afecta ning˙n derecho que pueda tener el Licenciante a buscar resarcimiento por Sus violaciones de esta Licencia P˙blica.
+>Para evitar dudas, esta secci√≥n 6(b) no afecta ning√∫n derecho que pueda tener el Licenciante a buscar resarcimiento por Sus violaciones de esta Licencia P√∫blica.
 
->c. Para evitar dudas, el Licenciante tambiÈn puede ofrecer el Material Licenciado bajo tÈrminos o condiciones diferentes, o dejar de distribuir el Material Licenciado en cualquier momento; sin embargo, hacer esto no pondr· fin a esta Licencia P˙blica.
+>c. Para evitar dudas, el Licenciante tambi√©n puede ofrecer el Material Licenciado bajo t√©rminos o condiciones diferentes, o dejar de distribuir el Material Licenciado en cualquier momento; sin embargo, hacer esto no pondr√° fin a esta Licencia P√∫blica.
 
->d. Las secciones 1, 5, 6, 7, y 8 permanecer·n vigentes a la terminaciÛn de esta Licencia P˙blica.
+>d. Las secciones 1, 5, 6, 7, y 8 permanecer√°n vigentes a la terminaci√≥n de esta Licencia P√∫blica.
 
-##SecciÛn 7 ñ Otros TÈrminos y Condiciones.
+##Secci√≥n 7 ‚Äì Otros T√©rminos y Condiciones.
 
->a. El Licenciante no estar· obligado por ning˙n tÈrmino o condiciÛn adicional o diferente que Usted le comunique a menos que se acuerde expresamente.
+>a. El Licenciante no estar√° obligado por ning√∫n t√©rmino o condici√≥n adicional o diferente que Usted le comunique a menos que se acuerde expresamente.
 
->b. Cualquier arreglo, convenio o acuerdo en relaciÛn con el Material Licenciado que no se indique en este documento se considera separado e independiente de los tÈrminos y condiciones de esta Licencia P˙blica.
+>b. Cualquier arreglo, convenio o acuerdo en relaci√≥n con el Material Licenciado que no se indique en este documento se considera separado e independiente de los t√©rminos y condiciones de esta Licencia P√∫blica.
 
-##SecciÛn 8 ñ InterpretaciÛn.
+##Secci√≥n 8 ‚Äì Interpretaci√≥n.
 
->a. Para evitar dudas, esta Licencia P˙blica no es ni deber· interpretarse como una reducciÛn, limitaciÛn, restricciÛn, o una imposiciÛn de condiciones al uso de Material Licenciado que legalmente pueda realizarse sin permiso del titular, m·s all· de lo contemplado en esta Licencia P˙blica.
+>a. Para evitar dudas, esta Licencia P√∫blica no es ni deber√° interpretarse como una reducci√≥n, limitaci√≥n, restricci√≥n, o una imposici√≥n de condiciones al uso de Material Licenciado que legalmente pueda realizarse sin permiso del titular, m√°s all√° de lo contemplado en esta Licencia P√∫blica.
 
->b. En la medida de lo posible, si alguna disposiciÛn de esta Licencia P˙blica se considera inaplicable, esta ser· autom·ticamente modificada en la medida mÌnima necesaria para hacerla aplicable. Si la disposiciÛn no puede ser reformada, deber· ser eliminada de esta Licencia P˙blica sin afectar la exigibilidad de los tÈrminos y condiciones restantes.
+>b. En la medida de lo posible, si alguna disposici√≥n de esta Licencia P√∫blica se considera inaplicable, esta ser√° autom√°ticamente modificada en la medida m√≠nima necesaria para hacerla aplicable. Si la disposici√≥n no puede ser reformada, deber√° ser eliminada de esta Licencia P√∫blica sin afectar la exigibilidad de los t√©rminos y condiciones restantes.
 
->c. No se podr· renunciar a ning˙n tÈrmino o condiciÛn de esta Licencia P˙blica, ni se consentir· ning˙n incumplimiento, a menos que se acuerde expresamente con el Licenciante.
+>c. No se podr√° renunciar a ning√∫n t√©rmino o condici√≥n de esta Licencia P√∫blica, ni se consentir√° ning√∫n incumplimiento, a menos que se acuerde expresamente con el Licenciante.
 
->d. Nada en esta Licencia P˙blica constituye ni puede ser interpretado como una limitaciÛn o una renuncia a los privilegios e inmunidades que aplican al Licenciante o a Usted, incluyendo aquellos surgidos a partir de procesos legales de cualquier jurisdicciÛn o autoridad.
+>d. Nada en esta Licencia P√∫blica constituye ni puede ser interpretado como una limitaci√≥n o una renuncia a los privilegios e inmunidades que aplican al Licenciante o a Usted, incluyendo aquellos surgidos a partir de procesos legales de cualquier jurisdicci√≥n o autoridad.
