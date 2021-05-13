@@ -5,7 +5,7 @@
 
 Al ejercer los Derechos Licenciados (definidos a continuación), Usted acepta y acuerda estar obligado por los términos y condiciones de esta Licencia Internacional Pública de Atribución/Reconocimiento-NoComercial-CompartirIgual 4.0 de Creative Commons ("Licencia Pública"). En la medida en que esta Licencia Pública pueda ser interpretada como un contrato, a Usted se le otorgan los Derechos Licenciados en consideración a su aceptación de estos términos y condiciones, y el Licenciante le concede a Usted tales derechos en consideración a los beneficios que el Licenciante recibe por poner a disposición el Material Licenciado bajo estos términos y condiciones.
 
-##Sección 1 – Definiciones.
+## Sección 1 – Definiciones.
 
 >a. **Material Adaptado** es aquel material protegido por Derechos de Autor y Derechos Similares que se deriva o se crea en base al Material Licenciado y en el cual el Material Licenciado se traduce, altera, arregla, transforma o modifica de manera tal que dicho resultado sea de aquellos que requieran autorización de acuerdo con los Derechos de Autor y Derechos Similares que ostenta el Licenciante. A los efectos de esta Licencia Pública, cuando el Material Licenciado se trate de una obra musical, una interpretación o una grabación sonora, la sincronización temporal de este material con una imagen en movimiento siempre producirá Material Adaptado.
 
@@ -35,7 +35,7 @@ Al ejercer los Derechos Licenciados (definidos a continuación), Usted acepta y 
 
 >n. **Usted** es el individuo o la entidad que ejerce los Derechos Licenciados en esta Licencia Pública. La palabra **Su** tiene un significado equivalente.
 
-##Sección 2 – Ámbito de Aplicación.
+## Sección 2 – Ámbito de Aplicación.
 
 >a. **Otorgamiento de la licencia.**
 
@@ -68,7 +68,7 @@ Al ejercer los Derechos Licenciados (definidos a continuación), Usted acepta y 
 
 >>3\. En la medida de lo posible, el Licenciante renuncia al derecho de cobrarle regalías a Usted por el ejercicio de los Derechos Licenciados, ya sea directamente o a través de una entidad de gestión colectiva bajo cualquier esquema de licenciamiento voluntario, renunciable o no renunciable. En todos los demás casos, el Licenciante se reserva expresamente cualquier derecho de cobrar esas regalías, incluidos aquellos casos en los que el Material Licenciado sea utilizado para fines distintos a los NoComerciales.
 
-##Sección 3 – Condiciones de la Licencia.
+## Sección 3 – Condiciones de la Licencia.
 
 Su ejercicio de los Derechos Licenciados está expresamente sujeto a las condiciones siguientes.
 
@@ -105,7 +105,7 @@ un URI o un hipervínculo al Material Licenciado en la medida razonablemente pos
 
 >>>3\. Usted no puede ofrecer o imponer ningún término o condición adicional o diferente, o aplicar ninguna Medida Tecnológica Efectiva al Material Adaptado que restrinja el ejercicio de los derechos concedidos en virtud de la Licencia de Adaptador que Usted aplique.
 
-##Sección 4 – Derechos "Sui Generis" sobre Bases de Datos.
+## Sección 4 – Derechos "Sui Generis" sobre Bases de Datos.
 
 Cuando los Derechos Licenciados incluyan Derechos "Sui Generis" sobre Bases de Datos que apliquen a Su uso del Material Licenciado:
 
@@ -117,7 +117,7 @@ Cuando los Derechos Licenciados incluyan Derechos "Sui Generis" sobre Bases de D
 
 Para evitar dudas, esta sección 4 complementa y no sustituye Sus obligaciones bajo esta Licencia Pública cuando los Derechos Licenciados incluyen otros Derechos de Autor y Derechos Similares.
 
-##Sección 5 – Exención de Garantías y Limitación de Responsabilidad.
+## Sección 5 – Exención de Garantías y Limitación de Responsabilidad.
 
 >**a. Salvo que el Licenciante se haya comprometido mediante un acuerdo por separado, en la medida de lo posible el Licenciante ofrece el Material Licenciado tal como es y tal como está disponible y no se hace responsable ni ofrece garantías de ningún tipo respecto al Material Licenciado, ya sea de manera expresa, implícita, legal u otra. Esto incluye, de manera no taxativa, las garantías de título, comerciabilidad, idoneidad para un propósito en particular, no infracción, ausencia de vicios ocultos u otros defectos, la exactitud, la presencia o la ausencia de errores, sean o no conocidos o detectables. Cuando no se permita, totalmente o en parte, la declaración de ausencia de garantías, a Usted puede no aplicársele esta exclusión.**
 
@@ -125,7 +125,7 @@ Para evitar dudas, esta sección 4 complementa y no sustituye Sus obligaciones b
 
 >c. La renuncia de garantías y la limitación de responsabilidad descritas anteriormente deberán ser interpretadas, en la medida de lo posible, como lo más próximo a una exención y renuncia absoluta a todo tipo de responsabilidad.
 
-##Sección 6 – Vigencia y Terminación.
+## Sección 6 – Vigencia y Terminación.
 
 >a. Esta Licencia Pública tiene una vigencia de aplicación igual al plazo de protección de los Derechos de Autor y Derechos Similares licenciados aquí. Sin embargo, si Usted incumple las condiciones de esta Licencia Pública, los derechos que se le conceden mediante esta Licencia Pública terminan automáticamente.
 
@@ -141,13 +141,13 @@ Para evitar dudas, esta sección 4 complementa y no sustituye Sus obligaciones b
 
 >d. Las secciones 1, 5, 6, 7, y 8 permanecerán vigentes a la terminación de esta Licencia Pública.
 
-##Sección 7 – Otros Términos y Condiciones.
+## Sección 7 – Otros Términos y Condiciones.
 
 >a. El Licenciante no estará obligado por ningún término o condición adicional o diferente que Usted le comunique a menos que se acuerde expresamente.
 
 >b. Cualquier arreglo, convenio o acuerdo en relación con el Material Licenciado que no se indique en este documento se considera separado e independiente de los términos y condiciones de esta Licencia Pública.
 
-##Sección 8 – Interpretación.
+## Sección 8 – Interpretación.
 
 >a. Para evitar dudas, esta Licencia Pública no es ni deberá interpretarse como una reducción, limitación, restricción, o una imposición de condiciones al uso de Material Licenciado que legalmente pueda realizarse sin permiso del titular, más allá de lo contemplado en esta Licencia Pública.
 
