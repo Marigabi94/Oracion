@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0d12">
+  <title>Oración Inmersiva — Conversación con Jesús durante 9 Días</title>
+  <meta name="description" content="Experiencia espiritual inmersiva de reflexión, súplica y gratitud. Conversando con Jesús durante 9 días con devoción, paz y fe inquebrantable.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Oración Inmersiva — Conversación con Jesús durante 9 Días">
+  <meta property="og:description" content="Una experiencia web contemplativa e inmersiva para la novena a Jesús de la Misericordia.">
+  <meta property="og:image" content="assets/images/jesus-sacred.jpg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23e5c378' d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z'/></svg>">
+
+  <!-- Imagen LCP: prioridad alta (guía optimize-image-priority) -->
+  <link rel="preload" as="image" href="assets/images/jesus-sacred.jpg" fetchpriority="high">
+
+  <!-- Fuentes: font-display:swap con tamaño ajustado para evitar saltos de layout -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Módulo ES: se difiere por defecto, sin librerías externas -->
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <canvas id="celestial-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-gradient-overlay" aria-hidden="true"></div>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="brand-title">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        <span>Oración Divina</span>
+      </div>
+
+      <nav class="nav-controls" aria-label="Controles de la experiencia">
+        <button id="toggle-audio-btn" class="nav-btn" type="button" aria-pressed="false">Sonido</button>
+        <button id="toggle-cursor-btn" class="nav-btn" type="button" aria-pressed="true">Cursor halo</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container container-narrow">
+        <div class="hero-parallax-back">
+          <div class="hero-halo">
+            <img class="hero-avatar" src="assets/images/jesus-sacred.jpg" alt="Imagen devocional de Jesús" width="160" height="160" fetchpriority="high" decoding="async">
+          </div>
+        </div>
+
+        <div class="hero-parallax-front">
+          <span class="hero-tagline">Novena de paz y esperanza</span>
+          <h1 id="hero-title" class="hero-title">Conversación con Jesús</h1>
+          <p class="hero-subtitle">Conversando con JESÚS durante 9 días, depositando cada angustia en su misericordia.</p>
+
+          <div class="hero-actions">
+            <a href="#altar" class="btn-sacred-primary" data-scroll-to="#altar">Pedir la gracia</a>
+            <a href="#oracion" class="btn-sacred-secondary" data-scroll-to="#oracion">Leer la oración</a>
+            <!-- Invoker command declarativo (guía declarative-dialog-popover-control) -->
+            <button class="btn-sacred-secondary" type="button" commandfor="print-dialog" command="show-modal" data-open-dialog="print-dialog">Imprimir estampa</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Desplazar</span>
+      </div>
+    </section>
+
+    <!-- ORACIÓN CONTINUA (un único bloque; los versos se iluminan al desplazarse) -->
+    <section class="prayer-continuous-section deferred-section" id="oracion" aria-labelledby="prayer-heading">
+      <div class="container container-narrow">
+        <article class="prayer-continuous-card reveal">
+          <svg class="prayer-header-ornament" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span class="section-eyebrow">Oración completa</span>
+          <h2 id="prayer-heading" class="prayer-continuous-title">Conversación con JESÚS</h2>
+          <p class="prayer-continuous-subtitle">Conversando con JESÚS durante 9 días</p>
+
+          <div class="prayer-continuous-text">
+            <p>
+              <span class="line"><strong>MI JESÚS</strong> en ti deposité toda mi confianza.</span>
+              <span class="line">Tú sabes de todo, Padre y Señor del universo.</span>
+              <span class="line">Eres el <b>Rey de Reyes</b>, tú que hiciste al</span>
+              <span class="line">paralítico andar, al muerto vivir, al leproso sanar.</span>
+            </p>
+
+            <p>
+              <span class="line">Tú que conoces mis angustias y ves mis lágrimas,</span>
+              <span class="line">bien sabes, <b>Divino amigo</b>, cómo preciso</span>
+              <span class="line">alcanzar de ti la gracia:</span>
+              <span class="line"><a href="#altar" class="prayer-grace-inline" data-scroll-to="#altar">✧ (pedir la gracia) ✧</a></span>
+            </p>
+
+            <p>
+              <span class="line">Haz, <b>Divino JESÚS</b>, que antes de que termine</span>
+              <span class="line">esta conversación que tendré contigo durante</span>
+              <span class="line">nueve días, pueda alcanzar esta gracia que</span>
+              <span class="line">te pido con mucha fe y esperanza:</span>
+              <span class="line"><a href="#altar" class="prayer-grace-inline" data-scroll-to="#altar">✧ (pedir la gracia con fe) ✧</a></span>
+            </p>
+
+            <p>
+              <span class="line">Con gratitud mandaré a imprimir mil oraciones</span>
+              <span class="line">para que otros precisen de ti,</span>
+              <span class="line">aprendan a tener fe en tu misericordia.</span>
+              <span class="line">Dejaré las oraciones en la iglesia para divulgar.</span>
+            </p>
+
+            <p>
+              <span class="line">Ilumina mis pasos, así como el sol ilumina</span>
+              <span class="line">cada mañana el amanecer y testifica nuestra</span>
+              <span class="line">conversación.</span>
+            </p>
+
+            <div class="prayer-climax-verse">
+              <span class="line">JESUCRISTO TENGO CONFIANZA EN TI.</span>
+              <span class="line">CADA DÍA CRECE MÁS MI FE EN TI.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NOVENA 9 DÍAS -->
+    <section class="novena-tracker-section deferred-section" id="novena-tracker" aria-labelledby="novena-heading">
+      <div class="container">
+        <p class="section-eyebrow">Itinerario espiritual</p>
+        <h2 id="novena-heading" class="section-heading">Jornada de los 9 días</h2>
+        <p class="section-desc">Elige el día de tu novena para meditar su intención. Tu avance se guarda en este dispositivo.</p>
+
+        <nav class="days-nav" id="days-nav" aria-label="Días de la novena"></nav>
+
+        <article class="current-day-card reveal" aria-live="polite">
+          <div class="day-intention-header">
+            <h3 id="current-day-title" class="day-intention-title">Día 1: Entrega y Confianza Absoluta</h3>
+            <span class="card-accent-num">Reflexión diaria</span>
+          </div>
+          <p id="current-day-intention" class="day-intention-text">"Mi Jesús, en ti deposito toda mi confianza."</p>
+          <p id="current-day-reflection" class="day-reflection">Comienza abriendo tu corazón sin reservas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ALTAR -->
+    <section class="altar-section deferred-section" id="altar" aria-labelledby="altar-heading">
+      <div class="container container-narrow">
+        <div class="altar-container reveal">
+          <p class="section-eyebrow">Momento de silencio y petición</p>
+          <h2 id="altar-heading" class="section-heading">Altar de la Gracia</h2>
+          <p class="altar-lead">Enciende la llama con tu intención y sella la súplica que llevarás en el corazón durante estos 9 días.</p>
+
+          <div class="altar-flame-wrapper" id="altar-flame" role="button" tabindex="0" aria-label="Avivar la llama">
+            <div class="altar-candle-flame"></div>
+            <div class="altar-candle-base"></div>
+          </div>
+
+          <div class="grace-input-box">
+            <label for="grace-textarea" class="visually-hidden">Escribe la gracia que deseas pedir a Jesús</label>
+            <textarea id="grace-textarea" class="grace-textarea" placeholder="Escribe con devoción la gracia que necesitas alcanzar…" rows="3"></textarea>
+
+            <div class="grace-actions">
+              <button id="seal-grace-btn" class="btn-sacred-primary" type="button">✧ Sellar mi petición con fe ✧</button>
+            </div>
+
+            <div id="grace-sealed-notice" class="grace-sealed-notice" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLÍMAX -->
+    <section class="climax-section" aria-label="Proclamación final">
+      <div class="container">
+        <blockquote class="climax-statement reveal">
+          JESUCRISTO, TENGO CONFIANZA EN TI. CADA DÍA CRECE MÁS MI FE EN TI.
+          <span>Amén.</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- COMPARTIR -->
+    <section class="sharing-section deferred-section" id="compartir" aria-labelledby="share-heading">
+      <div class="container container-narrow">
+        <div class="sharing-card reveal">
+          <p class="section-eyebrow">Voto de gratitud</p>
+          <h2 id="share-heading" class="section-heading">Difundir la misericordia</h2>
+          <p>Con gratitud compartiré esta oración para que otros que precisen de ti aprendan a confiar en tu compasión.</p>
+
+          <div class="share-buttons-group">
+            <button id="copy-prayer-btn" class="btn-sacred-secondary" type="button">Copiar oración</button>
+            <a href="https://api.whatsapp.com/send?text=Te%20comparto%20esta%20oraci%C3%B3n%20de%20nueve%20d%C3%ADas%20con%20Jes%C3%BAs:%20https://oracion-8ef29.web.app/" target="_blank" rel="noopener noreferrer" class="btn-sacred-primary">Compartir en WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- <dialog> nativo: Esc, foco y light-dismiss (closedby="any") sin JS -->
+  <dialog id="print-dialog" class="print-dialog" closedby="any" aria-labelledby="print-title">
+    <button class="modal-close-btn" type="button" commandfor="print-dialog" command="close" data-close-dialog="print-dialog" aria-label="Cerrar">×</button>
+
+    <img class="print-avatar" src="assets/images/jesus-sacred.jpg" alt="" width="100" height="100" loading="lazy" fetchpriority="low" decoding="async">
+    <h2 id="print-title" class="print-title">Conversación con JESÚS</h2>
+    <p class="print-kicker">Durante 9 días</p>
+
+    <div class="print-body">
+      <p><strong>MI JESÚS</strong> en ti deposité toda mi confianza. Tú sabes de todo, Padre y Señor del universo. Eres el Rey de Reyes, tú que hiciste al paralítico andar, al muerto vivir, al leproso sanar.</p>
+      <p>Tú que conoces mis angustias y ves mis lágrimas, bien sabes, Divino amigo, cómo preciso alcanzar de ti la gracia <em>(pedir la gracia)</em>.</p>
+      <p>Haz, Divino JESÚS, que antes de que termine esta conversación que tendré contigo durante nueve días, pueda alcanzar esta gracia que te pido con mucha fe y esperanza <em>(pedir la gracia con fe)</em>.</p>
+      <p>Con gratitud mandaré a imprimir mil oraciones para que otros precisen de ti, aprendan a tener fe en tu misericordia. Dejaré las oraciones en la iglesia para divulgar.</p>
+      <p>Ilumina mis pasos, así como el sol ilumina cada mañana el amanecer y testifica nuestra conversación.</p>
+      <p class="print-amen">JESUCRISTO TENGO CONFIANZA EN TI.<br>CADA DÍA CRECE MÁS MI FE EN TI.</p>
+    </div>
+
+    <button id="trigger-print-btn" class="btn-sacred-primary" type="button">Imprimir estampa</button>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-quote">"Ilumina mis pasos, así como el sol ilumina cada mañana el amanecer."</p>
+      <div class="footer-cc-license">
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener license">
+          <img alt="Licencia Creative Commons BY-NC-SA 4.0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" width="80" height="15" loading="lazy">
+        </a>
+        <p>Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

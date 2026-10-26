@@ -1,0 +1,96 @@
+/* ========================================================
+   DESIGN TOKENS — modern-web-guidance
+   · Colores en oklch() / color-mix()
+   · Escala fluida con clamp()
+   · Easing físico con linear()
+   ======================================================== */
+@property --halo-hue {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 85;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Superficies cósmicas */
+  --color-bg-void: oklch(0.12 0.01 280);
+  --color-bg-depth: oklch(0.155 0.015 275);
+  --color-bg-surface: oklch(0.19 0.02 275);
+
+  /* Oro celestial */
+  --color-gold: oklch(0.8 0.1 85);
+  --color-gold-light: oklch(0.93 0.04 90);
+  --color-gold-deep: oklch(0.62 0.11 80);
+  --color-gold-shadow: color-mix(in oklch, var(--color-gold) 25%, transparent);
+  --color-gold-glow: color-mix(in oklch, var(--color-gold) 45%, transparent);
+
+  /* Éter */
+  --color-ether: oklch(0.68 0.16 260);
+
+  /* Texto (contraste AA+ sobre fondo oscuro) */
+  --color-text: oklch(0.97 0.005 270);
+  --color-text-soft: oklch(0.82 0.015 270);
+  --color-text-muted: oklch(0.7 0.02 270);
+
+  /* Cristal */
+  --glass: color-mix(in oklch, var(--color-bg-surface) 65%, transparent);
+  --glass-hover: color-mix(in oklch, var(--color-bg-surface) 85%, transparent);
+  --glass-border: color-mix(in oklch, var(--color-gold) 20%, transparent);
+  --glass-border-strong: color-mix(in oklch, var(--color-gold) 55%, transparent);
+  --blur: blur(20px);
+
+  /* Tipografía */
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-reading: 'Cormorant Garamond', Georgia, serif;
+  --font-ui: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.85rem);
+  --text-sm: clamp(0.875rem, 0.82rem + 0.3vw, 0.975rem);
+  --text-base: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1.05rem + 0.4vw, 1.3rem);
+  --text-xl: clamp(1.3rem, 1.15rem + 0.7vw, 1.6rem);
+  --text-2xl: clamp(1.6rem, 1.35rem + 1vw, 2.1rem);
+  --text-3xl: clamp(2rem, 1.7rem + 1.6vw, 2.9rem);
+  --text-display: clamp(2.8rem, 1.6rem + 6vw, 6rem);
+
+  /* Espaciado */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: clamp(3rem, 2rem + 4vw, 5rem);
+  --space-4xl: clamp(4rem, 3rem + 6vw, 8rem);
+  --container: 1100px;
+  --container-narrow: 820px;
+
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 14px 44px oklch(0 0 0 / 0.55), 0 0 0 1px var(--glass-border);
+  --shadow-card-hover: 0 22px 64px oklch(0 0 0 / 0.75), 0 0 36px var(--color-gold-glow), 0 0 0 1px var(--glass-border-strong);
+
+  /* Easing: rebote físico nativo */
+  --ease-spring: linear(
+    0, 0.009, 0.035 2.1%, 0.141 4.4%, 0.723 12.9%, 0.938 16.7%, 1.017 19.4%,
+    1.077 22.4%, 1.121 25.8%, 1.149 29.5%, 1.159 33.5%, 1.15 38%, 1.108 45.5%,
+    1.019 59%, 0.99 66%, 0.987 72%, 1.002 87%, 1
+  );
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 200ms var(--ease-out);
+  --t-smooth: 450ms var(--ease-out);
+}
+
+/* Alto contraste: refuerza bordes y texto secundario */
+@media (prefers-contrast: more) {
+  :root {
+    --glass-border: color-mix(in oklch, var(--color-gold) 70%, transparent);
+    --glass-border-strong: var(--color-gold);
+    --color-text-soft: oklch(0.95 0.005 270);
+    --color-text-muted: oklch(0.88 0.01 270);
+    --glass: var(--color-bg-surface);
+  }
+}

@@ -12,7 +12,11 @@ firebase-debug.*.log*
 .firebaserc
 firebase.json
 # Firebase config
-
+.ai/
+.ia/
+.agent/
+.docs/
+.doc/
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
 # it commented so all members can deploy to the same project(s) in .firebaserc.
@@ -65,3 +69,27 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+
+.qwen/
+.minimax/
+.agents/
+.lingma/
+.claude/
+.codex/
+.cursor/
+.droid/
+.fx/
+.gemini/
+.github/
+.kilo/
+.kimi/
+.opencode/
+.pi/
+.warp/
+.zed/
+.hermes/
+skills-lock.json
+.skills.json
+.skills/
+.impeccable/
