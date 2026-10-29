@@ -51,7 +51,7 @@ export class CursorFX {
 
     // Detectar elementos interactivos para expandir el halo magnético
     const updateInteractiveElements = () => {
-      const targets = document.querySelectorAll('a, button, input, textarea, .bento-card, .day-chip, .altar-candle-flame');
+      const targets = document.querySelectorAll('a, button, input, textarea, .bento-card, .day-chip, .altar-candle-container');
       targets.forEach((el) => {
         el.addEventListener('mouseenter', () => this.setHover(true));
         el.addEventListener('mouseleave', () => this.setHover(false));

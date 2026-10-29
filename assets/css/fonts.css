@@ -1,0 +1,145 @@
+/* ====================================================================
+   DEFINICIÓN DE FUENTES LOCALES DE AUTOR — MARIA UZCATEGUI (MARIGABI94)
+   1. Headings & Títulos: "Playfair Display"
+   2. Body, Párrafos & Lectura: "Lora"
+   3. Acentos, Letra Capitular & Firmas: "Beau Rivage"
+   ==================================================================== */
+
+/* --------------------------------------------------------------------
+   1. PLAYFAIR DISPLAY — TÍTULOS Y SUBTÍTULOS DESTACADOS
+   -------------------------------------------------------------------- */
+/* Variable Font — Normal (Pesos 400 a 900) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+/* Variable Font — Italic (Pesos 400 a 900) */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./fonts/PlayfairDisplay/static/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+
+/* Fallbacks estáticos Playfair Display */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./fonts/PlayfairDisplay/static/PlayfairDisplay-ExtraBold.ttf') format('truetype');
+}
+
+/* --------------------------------------------------------------------
+   2. LORA — CUERPO DE TEXTO, PÁRRAFOS Y LECTURA LITERARIA / ESPIRITUAL
+   -------------------------------------------------------------------- */
+/* Variable Font — Normal (Pesos 400 a 700) */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./fonts/Lora/static/Lora-Regular.ttf') format('truetype');
+}
+
+/* Variable Font — Italic (Pesos 400 a 700) */
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+       url('./fonts/Lora/static/Lora-Italic.ttf') format('truetype');
+}
+
+/* Fallbacks estáticos Lora */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Lora/static/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Lora/static/Lora-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/Lora/static/Lora-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/Lora/static/Lora-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/Lora/static/Lora-Bold.ttf') format('truetype');
+}
+
+/* --------------------------------------------------------------------
+   3. BEAU RIVAGE — ACENTOS ESPECIALES, LETRA CAPITULAR Y FIRMAS
+   -------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Beau Rivage';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/BeauRivage/BeauRivage-Regular.ttf') format('truetype');
+}

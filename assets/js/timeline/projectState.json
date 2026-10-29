@@ -1,0 +1,93 @@
+{
+  "sheetsById": {
+    "Recorrido Sagrado": {
+      "staticOverrides": {
+        "byObject": {
+          "Camara 3D": {
+            "positionZ": 5.0,
+            "positionY": 0.0,
+            "fov": 75.0
+          },
+          "Nebulosa Blanca": {
+            "contraction": 0.0,
+            "fadeOut": 0.0,
+            "coreIntensity": 1.0
+          },
+          "Hero DOM": {
+            "scale": 1.0,
+            "opacity": 1.0,
+            "translateY": 0.0
+          }
+        }
+      },
+      "sequence": {
+        "subUnitsPerUnit": 30,
+        "length": 3.0,
+        "type": "PositionalSequence",
+        "tracksByObject": {
+          "Camara 3D": {
+            "trackData": {
+              "positionZ": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 5.0 },
+                  { "position": 1.5, "value": 11.0 },
+                  { "position": 3.0, "value": 22.0 }
+                ]
+              }
+            }
+          },
+          "Nebulosa Blanca": {
+            "trackData": {
+              "contraction": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 0.0 },
+                  { "position": 1.8, "value": 0.7 },
+                  { "position": 3.0, "value": 1.0 }
+                ]
+              },
+              "fadeOut": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 0.0 },
+                  { "position": 1.2, "value": 0.0 },
+                  { "position": 2.5, "value": 1.0 }
+                ]
+              }
+            }
+          },
+          "Hero DOM": {
+            "trackData": {
+              "scale": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 1.0 },
+                  { "position": 1.5, "value": 0.35 },
+                  { "position": 3.0, "value": 0.04 }
+                ]
+              },
+              "opacity": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 1.0 },
+                  { "position": 1.8, "value": 0.8 },
+                  { "position": 2.8, "value": 0.0 }
+                ]
+              },
+              "translateY": {
+                "type": "BasicKeyframedTrack",
+                "keyframes": [
+                  { "position": 0.0, "value": 0.0 },
+                  { "position": 3.0, "value": 50.0 }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitionVersion": "0.4.0",
+  "revisionHistory": []
+}

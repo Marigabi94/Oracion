@@ -1,492 +1,1282 @@
 /* ========================================================
-   COMPONENTES — rediseño con modern-web-guidance
+   ORACIÓN A JESÚS DE LA DIVINA MISERICORDIA — COMPONENTS.CSS
+   Sistema de Componentes Editorial Tecnológico · Dark Mode
+   · Autor: Maria Uzcategui (Marigabi94)
+   · Arquitectura: Dark Mode Profundo con Luz Volumétrica
+   · 3D WebGL Three.js, Scrollytelling Portal de Imágenes
+   · Botones Magnéticos, Dark Glassmorphism, Contadores Animados
+   · 60 FPS Estricto, Respeto a prefers-reduced-motion
    ======================================================== */
-.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--space-lg); }
-.container-narrow { max-width: var(--container-narrow); }
 
-/* ---------- Atmósfera ---------- */
-#celestial-canvas {
+/* ---------- Reset & Base de Documento ---------- */
+html {
+  background-color: var(--bg-deep);
+  color: var(--color-text);
+  font-family: var(--font-body, 'Lora', Georgia, serif);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-deep);
+  color: var(--color-text);
+  font-family: var(--font-body, 'Lora', Georgia, serif);
+  overflow-x: hidden;
+  position: relative;
+}
+
+p {
+  font-family: var(--font-body, 'Lora', Georgia, serif);
+}
+
+/* Textura cinematográfica de ruido / grano sutil */
+.editorial-grain {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Lienzo 2D de rayos celestiales y polvo sagrado */
+#sacred-canvas-stage {
   position: fixed;
   inset: 0;
   width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Enlace accesible para lectores de pantalla y teclado */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  background: var(--accent-gold);
+  color: #050407;
+  padding: 12px 24px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  z-index: 9999;
+  transition: top 0.3s ease;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 20px;
+}
+
+/* ---------- ESTRUCTURA GENERAL DE SECCIÓN Y CONTENEDOR ---------- */
+.editorial-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px clamp(20px, 4vw, 56px) 70px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* ---------- ETAPA CINEMÁTICA DE PORTAL (HERO -> NEGRO -> ALTAR) ---------- */
+.portal-cinematic-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   height: 100dvh;
-  z-index: -2;
-  pointer-events: none;
+  overflow: hidden;
+  background: transparent;
+  z-index: 2;
 }
 
-.ambient-gradient-overlay {
-  position: fixed;
+.portal-cinematic-stage #sec-hero.editorial-section {
+  position: absolute;
   inset: 0;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.portal-cinematic-stage #sec-altar.editorial-section {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: clamp(10px, 2vh, 22px) clamp(16px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 5;
   pointer-events: none;
-  background:
-    radial-gradient(circle at 50% 15%, oklch(0.8 0.1 85 / 0.09), transparent 60%),
-    radial-gradient(circle at 85% 85%, oklch(0.68 0.16 260 / 0.07), transparent 50%),
-    radial-gradient(circle at 15% 95%, oklch(0.8 0.1 85 / 0.05), transparent 40%);
 }
 
-/* ---------- Barra de progreso de lectura (scroll-driven, guía: scroll-progress-indicator) ---------- */
-.scroll-progress {
-  position: fixed;
-  inset: 0 0 auto 0;
-  height: 3px;
-  z-index: 150;
-  transform-origin: left;
-  background: linear-gradient(90deg, var(--color-gold-deep), var(--color-gold-light));
-  box-shadow: 0 0 12px var(--color-gold-glow);
-  scale: 0 1;
+.portal-cinematic-stage #sec-altar.editorial-section.is-interactive {
+  pointer-events: auto;
 }
 
-/* ---------- Navegación ---------- */
-.site-nav {
-  position: fixed;
-  inset: 0 0 auto 0;
-  z-index: 100;
-  padding: var(--space-md) var(--space-lg);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  background: oklch(0.12 0.01 280 / 0.7);
-  border-bottom: 1px solid color-mix(in oklch, var(--color-gold) 10%, transparent);
+.hero-editorial-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  opacity: 1;
+  visibility: visible;
 }
 
-.nav-inner { max-width: var(--container); margin-inline: auto; display: flex; justify-content: space-between; align-items: center; gap: var(--space-md); }
+.altar-editorial-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.12);
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+}
 
-.brand-title {
+.editorial-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+#sec-prayer .editorial-container,
+#sec-novena .editorial-container {
+  will-change: transform, opacity, filter;
+  transform-origin: center top;
+}
+
+/* HUD Tecnológico en Hero */
+.editorial-tech-hud {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
-  font-family: var(--font-display);
-  font-size: var(--text-base);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-gold);
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
 }
 
-.brand-icon { width: 20px; height: 20px; fill: currentColor; filter: drop-shadow(0 0 8px var(--color-gold)); }
-
-.nav-controls { display: flex; gap: var(--space-sm); }
-
-.nav-btn {
+.hud-pill {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  color: var(--color-text-secondary);
+  background: rgba(18, 14, 25, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 4px 10px;
   display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
-  padding: 0.45rem 0.9rem;
-  border-radius: var(--radius-full);
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  color: var(--color-text-soft);
-  font-size: var(--text-xs);
-  letter-spacing: 0.05em;
-  transition: all var(--t-fast);
-}
-.nav-btn:hover { border-color: var(--color-gold); color: var(--color-gold-light); translate: 0 -1px; box-shadow: 0 4px 15px var(--color-gold-shadow); }
-.nav-btn[aria-pressed="true"] { background: color-mix(in oklch, var(--color-gold) 16%, transparent); border-color: var(--color-gold); color: var(--color-gold-light); }
-
-/* ---------- Hero ---------- */
-.hero-section {
-  min-height: 100dvh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  position: relative;
-  padding-block: var(--space-4xl) var(--space-3xl);
-}
-
-.hero-halo {
-  width: clamp(130px, 18vw, 180px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  padding: 5px;
-  margin: 0 auto var(--space-2xl);
-  background: conic-gradient(from calc(var(--halo-hue) * 1deg), var(--color-gold), var(--color-ether), var(--color-gold-deep), var(--color-gold));
-  box-shadow: 0 0 50px var(--color-gold-glow), 0 0 100px oklch(0.68 0.16 260 / 0.3);
-  animation: halo-pulse 6s ease-in-out infinite alternate, halo-spin 24s linear infinite;
-}
-
-.hero-avatar { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-bg-void); }
-
-@keyframes halo-pulse { to { scale: 1.04; filter: brightness(1.2); } }
-@keyframes halo-spin { to { --halo-hue: 360; } }
-
-.hero-tagline {
-  display: inline-block;
-  font-size: var(--text-xs);
-  letter-spacing: 0.3em;
+  gap: 6px;
   text-transform: uppercase;
-  color: var(--color-gold);
-  margin-bottom: var(--space-md);
-  padding: 0.35rem 1rem;
-  border-radius: var(--radius-full);
-  background: color-mix(in oklch, var(--color-gold) 9%, transparent);
-  border: 1px solid color-mix(in oklch, var(--color-gold) 28%, transparent);
 }
 
-.hero-title {
+.hud-pill--accent {
+  color: var(--accent-gold-light);
+  border-color: rgba(197, 160, 89, 0.35);
+  background: rgba(197, 160, 89, 0.08);
+}
+
+.hud-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.hud-divider {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+/* Ceja / Eyebrow */
+.editorial-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
+}
+
+.editorial-eyebrow-line {
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background-color: var(--accent-gold);
+  box-shadow: 0 0 8px var(--accent-gold);
+}
+
+/* Titulares de Alto Impacto */
+.editorial-display-h1 {
   font-family: var(--font-display);
-  font-size: var(--text-display);
-  line-height: 1.08;
-  font-weight: 500;
-  margin-bottom: var(--space-lg);
-  background: linear-gradient(180deg, #fff 20%, oklch(0.92 0.02 90) 65%, var(--color-gold) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+  text-transform: none;
+  color: var(--color-text);
+  margin: 0 0 14px 0;
+  text-align: center;
+  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9);
+  will-change: transform, opacity, filter;
 }
 
-.hero-subtitle {
-  font-family: var(--font-reading);
-  font-size: var(--text-2xl);
+.editorial-display-h2 {
+  font-family: var(--font-display);
+  font-size: var(--display-h2);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+  text-transform: none;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+}
+
+/* Inicial caligráfica en fuente de autor Beau Rivage */
+.title-initial {
+  font-family: var(--font-accent); /* 'Beau Rivage', cursive */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25em;
+  line-height: 0.85;
+  display: inline-block;
+  vertical-align: -0.05em;
+  letter-spacing: normal;
+  color: inherit;
+  margin-right: 0.12em;
+  padding-right: 0.02em;
+}
+
+/* Números romanos en titulares: Misma fuente que el texto de los títulos (Playfair Display) y siempre en mayúsculas */
+.title-roman {
+  font-family: var(--font-display); /* Playfair Display, serif */
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.96em;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  vertical-align: baseline;
+  color: inherit;
+  margin-right: 0.04em;
+}
+
+.editorial-lead {
+  font-family: var(--font-body);
+  font-size: var(--text-lead);
+  font-weight: 400;
   font-style: italic;
-  color: var(--color-text-soft);
-  max-width: 34ch;
-  margin: 0 auto var(--space-2xl);
-  line-height: 1.4;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 680px;
+  margin: 0 auto 34px auto;
 }
 
-.hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; }
+.hero-editorial-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 900px;
+  margin: auto 0;
+  transform-origin: center 42%;
+  will-change: transform, opacity;
+}
 
-.btn-sacred-primary, .btn-sacred-secondary {
+.altar-editorial-wrap {
+  transform-origin: center center;
+  will-change: transform, opacity;
+  width: 100%;
+}
+
+/* Imagen/Video Sagrado de Jesús en el Hero (Sin marco negro, Proporción Realzada) */
+.hero-art-frame {
+  width: clamp(230px, 26vw, 340px);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto clamp(24px, 3.8vh, 38px) auto;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.hero-art-frame:hover {
+  box-shadow: none;
+}
+
+.hero-art-video,
+.hero-art-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 48vh;
+  object-fit: contain;
+  border-radius: 8px;
+  border: none;
+  filter: drop-shadow(0 18px 45px rgba(0, 0, 0, 0.95));
+  outline: none;
+  background: transparent;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-art-caption {
+  display: none;
+}
+
+/* Retablo Maestro en Secciones de Oración y Novena */
+.editorial-master-frame {
+  width: 100%;
+  max-width: 320px;
+  background: #09070c;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85);
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.editorial-master-video,
+.editorial-master-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  outline: none;
+  background: transparent;
+  pointer-events: none;
+  user-select: none;
+}
+
+.editorial-frame-tag {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px 0;
+}
+
+/* ---------- GRUPO DE BOTONES MAGNÉTICOS ---------- */
+.editorial-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.editorial-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-sm);
-  border-radius: var(--radius-full);
-  transition: all var(--t-smooth);
-  text-align: center;
-}
-
-.btn-sacred-primary {
-  padding: 0.95rem 2.2rem;
-  font-family: var(--font-display);
-  font-size: var(--text-sm);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: oklch(0.15 0.01 280);
-  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-  box-shadow: 0 4px 25px var(--color-gold-shadow);
-}
-.btn-sacred-primary:hover { translate: 0 -2px; scale: 1.03; transition-timing-function: var(--ease-spring); box-shadow: 0 8px 40px var(--color-gold-glow); }
-
-.btn-sacred-secondary {
-  padding: 0.95rem 2rem;
-  font-size: var(--text-sm);
-  letter-spacing: 0.04em;
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--blur);
-}
-.btn-sacred-secondary:hover { background: var(--glass-hover); border-color: var(--color-gold); color: var(--color-gold-light); translate: 0 -2px; }
-
-.scroll-indicator {
-  position: absolute;
-  inset: auto 0 var(--space-xl) 0;
-  display: grid;
-  justify-items: center;
-  gap: var(--space-xs);
-  color: var(--color-text-muted);
-  font-size: var(--text-xs);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-.scroll-mouse { width: 22px; height: 36px; border: 2px solid color-mix(in oklch, var(--color-gold) 45%, transparent); border-radius: 12px; position: relative; }
-.scroll-wheel { width: 4px; height: 8px; background: var(--color-gold); border-radius: 2px; position: absolute; top: 6px; left: 50%; translate: -50% 0; animation: scroll-bob 2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
-@keyframes scroll-bob { to { translate: -50% 14px; opacity: 0; } }
-@media (max-height: 860px) { .scroll-indicator { display: none; } }
-
-/* ---------- Secciones (content-visibility: guía efficient-background-processing) ---------- */
-.deferred-section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 700px;
-}
-
-.section-eyebrow { display: block; font-size: var(--text-xs); letter-spacing: 0.25em; text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--space-xs); }
-.section-heading { font-family: var(--font-display); font-size: var(--text-3xl); margin-bottom: var(--space-sm); }
-.section-desc { color: var(--color-text-soft); font-size: var(--text-base); max-width: 60ch; margin-bottom: var(--space-2xl); }
-
-/* ---------- Novena 9 días ---------- */
-.novena-tracker-section { padding-block: var(--space-3xl); border-block: 1px solid color-mix(in oklch, var(--color-gold) 8%, transparent); }
-
-.days-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: var(--space-sm); margin-bottom: var(--space-xl); }
-
-.day-chip {
-  display: grid;
-  justify-items: center;
-  gap: 2px;
-  padding: var(--space-md) var(--space-sm);
-  border-radius: var(--radius-md);
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--blur);
-  transition: all var(--t-smooth);
-}
-.day-chip:hover { border-color: var(--color-gold); translate: 0 -2px; background: var(--glass-hover); }
-.day-chip.active { background: linear-gradient(180deg, color-mix(in oklch, var(--color-gold) 22%, transparent), var(--color-bg-surface)); border-color: var(--color-gold); box-shadow: 0 0 25px var(--color-gold-shadow); }
-.day-number { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; color: var(--color-gold); }
-.day-label { font-size: var(--text-xs); color: var(--color-text-muted); letter-spacing: 0.08em; text-transform: uppercase; }
-.day-chip.completed .day-status { width: 8px; height: 8px; border-radius: 50%; background: var(--color-gold); box-shadow: 0 0 8px var(--color-gold); margin-top: 4px; }
-
-.current-day-card {
-  display: grid;
-  gap: var(--space-md);
-  padding: var(--space-2xl);
-  border-radius: var(--radius-lg);
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--blur);
-  box-shadow: var(--shadow-card);
-}
-.day-intention-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); padding-bottom: var(--space-md); border-bottom: 1px solid color-mix(in oklch, var(--color-gold) 14%, transparent); }
-.card-accent-num { font-family: var(--font-display); font-size: var(--text-xs); color: var(--color-gold); letter-spacing: 0.25em; text-transform: uppercase; }
-.day-intention-title { font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-gold-light); }
-.day-intention-text { font-family: var(--font-reading); font-size: var(--text-xl); font-style: italic; line-height: 1.6; }
-.day-reflection { color: var(--color-text-soft); }
-
-/* ---------- ORACIÓN CONTINUA + scrollytelling por líneas ---------- */
-.prayer-continuous-section { padding-block: var(--space-4xl); }
-
-.prayer-continuous-card {
-  position: relative;
-  padding: var(--space-3xl) var(--space-2xl);
-  border-radius: var(--radius-lg);
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--blur);
-  box-shadow: var(--shadow-card);
-  text-align: center;
-}
-.prayer-continuous-card::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, transparent, var(--color-gold), transparent); }
-
-.prayer-header-ornament { width: 36px; height: 36px; margin: 0 auto var(--space-md); fill: var(--color-gold); filter: drop-shadow(0 0 10px var(--color-gold)); }
-.prayer-continuous-title { font-family: var(--font-display); font-size: var(--text-3xl); color: var(--color-gold-light); line-height: 1.2; margin-bottom: var(--space-xs); }
-.prayer-continuous-subtitle { font-family: var(--font-reading); font-size: var(--text-xl); font-style: italic; color: var(--color-gold); margin-bottom: var(--space-2xl); }
-
-.prayer-continuous-text {
-  font-family: var(--font-reading);
-  font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.55rem);
-  line-height: 1.95;
-  max-width: 34em;
-  margin-inline: auto;
-}
-.prayer-continuous-text p { margin-bottom: var(--space-xl); }
-.prayer-continuous-text .line { display: block; }
-.prayer-continuous-text b, .prayer-continuous-text strong { color: var(--color-gold-light); font-weight: 600; }
-
-.prayer-grace-inline {
-  display: inline-block;
-  margin-block: var(--space-xs);
-  padding: 0.35rem 1.2rem;
-  border-radius: var(--radius-full);
-  background: color-mix(in oklch, var(--color-gold) 13%, transparent);
-  border: 1px dashed var(--color-gold);
-  color: var(--color-gold-light);
-  font-size: var(--text-base);
-  font-style: italic;
-  transition: all var(--t-fast);
-}
-.prayer-grace-inline:hover { background: color-mix(in oklch, var(--color-gold) 26%, transparent); scale: 1.04; box-shadow: 0 0 15px var(--color-gold-shadow); }
-
-.prayer-climax-verse {
-  margin-top: var(--space-xl);
-  padding-top: var(--space-lg);
-  border-top: 1px solid color-mix(in oklch, var(--color-gold) 22%, transparent);
-  font-family: var(--font-display);
-  font-size: clamp(1.3rem, 1.1rem + 1vw, 1.8rem);
-  line-height: 1.4;
-  letter-spacing: 0.05em;
-  color: var(--color-gold-light);
-  text-shadow: 0 0 20px var(--color-gold-shadow);
-}
-
-/* ---------- Altar ---------- */
-.altar-section { padding-block: var(--space-4xl); }
-
-.altar-container {
-  padding: var(--space-3xl) var(--space-2xl);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  background: linear-gradient(180deg, var(--color-bg-surface), var(--color-bg-depth));
-  border: 1px solid color-mix(in oklch, var(--color-gold) 26%, transparent);
-  box-shadow: 0 0 60px oklch(0 0 0 / 0.8), 0 0 40px color-mix(in oklch, var(--color-gold) 14%, transparent);
-}
-.altar-lead { color: var(--color-text-soft); max-width: 52ch; margin-inline: auto; }
-
-.altar-flame-wrapper { display: grid; justify-items: center; width: 50px; margin: var(--space-lg) auto 0; cursor: pointer; border-radius: 8px; }
-.altar-candle-flame {
-  width: 24px; height: 48px;
-  background: radial-gradient(ellipse at 50% 80%, #fff 0%, oklch(0.93 0.09 95) 30%, var(--color-gold) 60%, transparent 80%);
-  border-radius: 50% 50% 20% 20% / 60% 60% 40% 40%;
-  filter: drop-shadow(0 0 16px var(--color-gold));
-  animation: flicker 3s ease-in-out infinite alternate;
-  transform-origin: 50% 90%;
-}
-.altar-flame-wrapper:active .altar-candle-flame { animation: flare 0.6s var(--ease-spring); }
-@keyframes flicker { 25% { scale: 1.05 0.95; rotate: 2deg; } 50% { scale: 0.95 1.05; rotate: -2deg; } 75% { scale: 1.08 0.97; rotate: 1deg; } }
-@keyframes flare { 50% { scale: 1.5 1.7; } }
-.altar-candle-base { width: 14px; height: 24px; background: linear-gradient(90deg, oklch(0.85 0.01 270), oklch(0.6 0.02 270)); border-radius: 3px 3px 0 0; }
-
-.grace-input-box { max-width: 640px; margin: var(--space-xl) auto 0; }
-
-/* field-sizing: content → el campo crece al escribir (guía: form-fields-automatically-fit-contents) */
-.grace-textarea {
-  width: 100%;
-  field-sizing: content;
-  min-height: 6.5rem;
-  max-height: 22rem;
-  padding: var(--space-md);
-  border-radius: var(--radius-md);
-  background: oklch(0.12 0.01 280 / 0.65);
-  border: 1px solid color-mix(in oklch, var(--color-gold) 32%, transparent);
+  padding: 10px 18px;
+  background: rgba(18, 14, 25, 0.85);
+  border: var(--border-hairline);
+  border-radius: 8px;
   color: var(--color-text);
-  font-family: var(--font-reading);
-  font-size: var(--text-lg);
-  line-height: 1.5;
-  resize: none;
-  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s var(--ease-spring), border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
-.grace-textarea:focus { border-color: var(--color-gold); box-shadow: 0 0 20px var(--color-gold-shadow); outline: none; }
 
-.grace-actions { margin-top: var(--space-md); display: flex; justify-content: center; }
-
-.grace-sealed-notice {
-  display: none;
-  margin-top: var(--space-lg);
-  padding: var(--space-md);
-  border-radius: var(--radius-md);
-  background: color-mix(in oklch, var(--color-gold) 11%, transparent);
-  border: 1px solid var(--color-gold);
-  color: var(--color-gold-light);
-  font-family: var(--font-reading);
-  font-size: var(--text-lg);
+.editorial-btn span {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.2s ease;
 }
-.grace-sealed-notice.visible { display: block; animation: rise 0.6s var(--ease-out); }
-@keyframes rise { from { opacity: 0; translate: 0 10px; } }
 
-/* ---------- Clímax & compartir ---------- */
-.climax-section { padding-block: var(--space-4xl); text-align: center; }
-.climax-statement {
-  max-width: 20ch;
-  margin-inline: auto;
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 1.2rem + 3vw, 3.6rem);
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  color: var(--color-gold-light);
-  text-shadow: 0 0 40px var(--color-gold-glow);
+.editorial-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-gold);
+  transform: translateY(100%);
+  transition: transform 0.35s var(--ease-spring);
+  z-index: 1;
 }
-.climax-statement span { display: block; margin-top: var(--space-md); font-family: var(--font-reading); font-style: italic; font-size: var(--text-xl); letter-spacing: 0; color: var(--color-text-soft); text-shadow: none; }
 
-.sharing-section { padding-block: var(--space-3xl); }
-.sharing-card { display: grid; justify-items: center; gap: var(--space-lg); padding: var(--space-2xl); text-align: center; border-radius: var(--radius-lg); background: var(--glass); border: 1px solid var(--glass-border); backdrop-filter: var(--blur); }
-.sharing-card p { color: var(--color-text-soft); max-width: 50ch; }
-.share-buttons-group { display: flex; flex-wrap: wrap; gap: var(--space-md); justify-content: center; }
+.editorial-btn:hover {
+  border-color: var(--accent-gold-light);
+  color: #050407;
+  box-shadow: 0 0 25px var(--accent-gold-glow);
+}
 
-/* ---------- Diálogo nativo <dialog> (guías: light-dismiss, animate-to-from-top-layer) ---------- */
-.print-dialog {
-  margin: auto;
-  width: min(92vw, 520px);
-  max-height: 90dvh;
-  padding: var(--space-2xl);
-  border: 3px double var(--color-gold-deep);
-  border-radius: var(--radius-md);
-  background: oklch(0.98 0.01 80);
-  color: oklch(0.25 0.02 40);
+.editorial-btn:hover::before {
+  transform: translateY(0%);
+}
+
+.editorial-btn:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 3px;
+}
+
+/* Variante Sólida */
+.editorial-btn--solid {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #050407;
+  box-shadow: 0 0 25px var(--accent-gold-glow);
+}
+
+.editorial-btn--solid::before {
+  background: #ffffff;
+}
+
+.editorial-btn--solid:hover {
+  color: #050407;
+  border-color: #ffffff;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.5);
+}
+
+/* Indicador de Descenso Compacto */
+.editorial-scroll-cue {
+  position: absolute;
+  bottom: clamp(20px, 3.5vh, 36px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: clamp(13px, 1.15vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.editorial-scroll-cue span {
+  color: #ffffff;
+}
+
+.editorial-scroll-line {
+  width: 1px;
+  height: 18px;
+  background: linear-gradient(to bottom, var(--accent-gold), transparent);
+  animation: scrollPulse 2.2s infinite ease-in-out;
+}
+
+@keyframes scrollPulse {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  50.1% { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* ---------- SECCIÓN 2: GRID EDITORIAL DE LA ORACIÓN ---------- */
+.editorial-split-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: start;
+}
+
+.editorial-split-grid--reverse {
+  grid-template-columns: 1fr minmax(280px, 400px);
+}
+
+.editorial-gallery-col {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 100px;
+}
+
+/* Manuscrito Sagrado (Sin tarjeta contenedora, lectura editorial pura) */
+.editorial-manuscript-card {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  will-change: transform, opacity, filter;
+  transform-origin: center top;
+}
+
+.editorial-manuscript-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 22px;
+  margin-bottom: 30px;
+  border-bottom: var(--border-hairline-subtle);
+  gap: 16px;
+}
+
+.editorial-prayer-body {
+  font-family: var(--font-body);
+  font-size: clamp(17px, 1.35vw, 19.5px);
+  line-height: 1.85;
+  color: var(--color-text);
+}
+
+.editorial-prayer-body p,
+.editorial-interlude-box,
+.editorial-proclamation-box {
+  will-change: transform, opacity, filter;
+}
+
+.editorial-prayer-body p {
+  font-family: var(--font-body);
+  margin: 0 0 24px 0;
+}
+
+.editorial-prayer-body strong {
+  color: var(--accent-gold-light);
+  font-weight: 600;
+}
+
+/* Letra Capitular Iluminada 'M' — Acento Caligráfico Beau Rivage */
+.editorial-drop-cap {
+  float: left;
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: clamp(4.8rem, 7vw, 6.4rem);
+  line-height: 0.72;
+  padding-top: 6px;
+  padding-right: 24px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  color: var(--accent-gold);
+  text-shadow: 0 0 25px var(--accent-gold-glow);
+}
+
+/* Cuadro de Interludio / Momento de Recogimiento */
+.editorial-interlude-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(197, 160, 89, 0.08);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 16px 22px;
+  margin: 30px 0;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--accent-gold-light);
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.interlude-sacred-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.interlude-grace-text {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: clamp(16px, 1.35vw, 19px);
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 1.55;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  word-break: break-word;
+}
+
+/* Proclamación Final Invariable */
+.editorial-proclamation-box {
+  background: linear-gradient(135deg, rgba(28, 22, 38, 0.95), rgba(12, 10, 18, 0.95));
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  box-shadow: 0 0 35px var(--accent-gold-glow);
+  padding: 28px 24px;
   text-align: center;
-  overflow-y: auto;
-  box-shadow: 0 25px 60px oklch(0 0 0 / 0.8);
-  /* estado de salida */
-  opacity: 0;
-  translate: 0 24px;
-  scale: 0.96;
-  transition: opacity 0.35s var(--ease-out), translate 0.35s var(--ease-out), scale 0.35s var(--ease-out), overlay 0.35s allow-discrete, display 0.35s allow-discrete;
+  margin-top: 36px;
 }
-.print-dialog[open] { opacity: 1; translate: 0 0; scale: 1; }
-@starting-style { .print-dialog[open] { opacity: 0; translate: 0 24px; scale: 0.96; } }
 
-.print-dialog::backdrop { background: oklch(0 0 0 / 0); backdrop-filter: blur(0); transition: all 0.35s allow-discrete; }
-.print-dialog[open]::backdrop { background: oklch(0 0 0 / 0.85); backdrop-filter: blur(12px); }
-@starting-style { .print-dialog[open]::backdrop { background: oklch(0 0 0 / 0); backdrop-filter: blur(0); } }
+.editorial-proclamation-text {
+  font-family: var(--font-display);
+  font-size: clamp(14px, 1.3vw, 17px);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.16em;
+  line-height: 1.7;
+  margin: 0 0 8px 0;
+}
 
-.modal-close-btn { position: absolute; top: 0.75rem; right: 1rem; font-size: 1.8rem; line-height: 1; color: oklch(0.25 0.02 40); border-radius: 50%; width: 2.2rem; height: 2.2rem; }
-.modal-close-btn:hover { background: oklch(0.25 0.02 40 / 0.1); }
+.editorial-proclamation-amen {
+  font-family: var(--font-accent);
+  font-size: 34px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  color: var(--accent-gold);
+}
 
-.print-avatar { width: 100px; height: 100px; border-radius: 50%; margin: 0 auto var(--space-md); border: 2px solid var(--color-gold-deep); object-fit: cover; }
-.print-title { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-gold-deep); margin-bottom: 0.25rem; }
-.print-kicker { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: oklch(0.45 0.02 40); margin-bottom: var(--space-md); }
-.print-body { font-family: var(--font-reading); font-size: 1.1rem; line-height: 1.6; margin-bottom: var(--space-lg); }
-.print-body p + p { margin-top: var(--space-md); }
-.print-body .print-amen { font-weight: 700; color: var(--color-gold-deep); }
-.print-dialog .btn-sacred-primary { width: 100%; }
+/* ---------- SECCIÓN PILARES: TARJETAS DARK GLASSMORPHISM AVANZADO ---------- */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
 
-/* ---------- Footer ---------- */
-.site-footer { padding-block: var(--space-3xl); text-align: center; background: oklch(0.12 0.01 280 / 0.85); backdrop-filter: var(--blur); border-top: 1px solid color-mix(in oklch, var(--color-gold) 12%, transparent); }
-.footer-quote { font-family: var(--font-reading); font-size: var(--text-lg); font-style: italic; color: var(--color-gold); margin-bottom: var(--space-md); }
-.footer-cc-license { display: grid; justify-items: center; gap: var(--space-xs); font-size: var(--text-xs); color: var(--color-text-muted); }
-.footer-cc-license a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; }
+.pillar-glass-card {
+  position: relative;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  border-radius: 8px;
+  box-shadow: var(--shadow-glass);
+  padding: 34px 28px;
+  overflow: hidden;
+  transition: transform 0.3s var(--ease-spring), border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* ---------- Cursor halo ---------- */
-.custom-cursor-dot, .custom-cursor-halo { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999; border-radius: 50%; will-change: transform; }
-.custom-cursor-dot { width: 8px; height: 8px; background: var(--color-gold); }
-.custom-cursor-halo { width: 38px; height: 38px; border: 1px solid color-mix(in oklch, var(--color-gold) 55%, transparent); transition: width 0.25s, height 0.25s, border-color 0.25s, background-color 0.25s; }
-.custom-cursor-halo.hovering { width: 64px; height: 64px; border-color: var(--color-gold); background: color-mix(in oklch, var(--color-gold) 12%, transparent); box-shadow: 0 0 20px var(--color-gold-shadow); }
-@media (pointer: coarse), (prefers-reduced-motion: reduce) { .custom-cursor-dot, .custom-cursor-halo { display: none !important; } }
+.pillar-glass-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-glass), 0 0 35px var(--accent-gold-glow);
+}
 
-/* ========================================================
-   ANIMACIONES GUIADAS POR SCROLL (nativas, sin librerías)
-   Guías: scroll-entry-exit-effects, scrollytelling,
-          parallax-scroll-effects, scroll-progress-indicator
-   ======================================================== */
-@media (prefers-reduced-motion: no-preference) {
-  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+.pillar-card-glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(20px);
+}
 
-    @keyframes grow-progress { to { scale: 1 1; } }
-    .scroll-progress {
-      animation: grow-progress linear both;
-      animation-timeline: scroll(root block);
-    }
+.pillar-glass-card--crimson {
+  border-color: rgba(217, 56, 72, 0.35);
+}
+.pillar-glass-card--crimson:hover {
+  border-color: var(--mercy-blood);
+  box-shadow: var(--shadow-glass), 0 0 35px var(--mercy-blood-glow);
+}
+.pillar-card-glow--crimson {
+  background: radial-gradient(circle, rgba(217, 56, 72, 0.3) 0%, transparent 70%);
+}
 
-    /* Entrada de tarjetas al viewport */
-    @keyframes reveal-in { from { opacity: 0; translate: 0 48px; scale: 0.97; } }
-    .reveal {
-      animation: reveal-in linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 45%;
-    }
+.pillar-glass-card--cyan {
+  border-color: rgba(56, 189, 248, 0.35);
+}
+.pillar-glass-card--cyan:hover {
+  border-color: var(--mercy-water);
+  box-shadow: var(--shadow-glass), 0 0 35px var(--mercy-water-glow);
+}
+.pillar-card-glow--cyan {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, transparent 70%);
+}
 
-    /* Scrollytelling: cada verso se ilumina al entrar en el viewport,
-       sin trocear la oración (sigue siendo un único bloque continuo) */
-    @keyframes line-awaken { from { opacity: 0.18; filter: blur(2px); translate: 0 10px; } }
-    .prayer-continuous-text .line {
-      animation: line-awaken linear both;
-      animation-timeline: view();
-      animation-range: entry 5% entry 75%;
-    }
+.pillar-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    /* Parallax del hero: halo y título se mueven a distinto ritmo */
-    @keyframes hero-drift-slow { to { translate: 0 90px; opacity: 0; } }
-    @keyframes hero-drift-fast { to { translate: 0 -60px; opacity: 0; } }
-    .hero-parallax-back { animation: hero-drift-slow linear both; animation-timeline: view(); animation-range: exit 0% exit 90%; }
-    .hero-parallax-front { animation: hero-drift-fast linear both; animation-timeline: view(); animation-range: exit 0% exit 80%; }
+.pillar-tech-tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  color: var(--color-text-secondary);
+}
+
+.pillar-icon {
+  font-size: 16px;
+  color: var(--accent-gold);
+}
+
+.pillar-card-title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin: 0 0 14px 0;
+}
+
+.pillar-card-body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0 0 24px 0;
+}
+
+.pillar-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--color-text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 16px;
+}
+
+/* ---------- SECCIÓN 3: BENTO GRID DE 9 ESTACIONES ---------- */
+.bento-stations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.bento-station-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(16px);
+  border: var(--border-hairline-subtle);
+  border-radius: 8px;
+  padding: 16px 14px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+  min-height: 70px;
+}
+
+.bento-station-item:hover {
+  background: rgba(28, 22, 38, 0.85);
+  border-color: var(--accent-gold);
+}
+
+.bento-station-item.active {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold-light);
+  box-shadow: 0 0 25px var(--accent-gold-glow);
+}
+
+.bento-station-num {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.bento-station-item.active .bento-station-num {
+  color: #050407;
+  font-weight: 700;
+}
+
+.bento-station-keyword {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 4px;
+}
+
+.bento-station-item.active .bento-station-keyword {
+  color: #050407;
+}
+
+/* Visor Activo de la Estación en Dark Glassmorphism */
+.editorial-station-viewer {
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(24px);
+  border: var(--border-hairline);
+  border-radius: 8px;
+  box-shadow: var(--shadow-glass);
+  padding: 34px 28px;
+}
+
+.editorial-station-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-gold-light);
+  background: rgba(197, 160, 89, 0.12);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+
+.editorial-station-title {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+  letter-spacing: 0.025em;
+  word-spacing: 0.18em;
+  line-height: 1.45;
+}
+
+.editorial-station-title .title-initial {
+  margin-right: 0.15em;
+  padding-right: 0.03em;
+  font-size: 1.28em;
+  vertical-align: -0.06em;
+}
+
+.editorial-station-title .title-roman {
+  margin-left: 0.02em;
+  margin-right: 0.04em;
+}
+
+.editorial-station-intention {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--accent-gold-light);
+  margin: 0 0 18px 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--accent-gold);
+}
+
+.editorial-station-reflection {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ---------- SECCIÓN DE MÉTRICAS & PRUEBA SOCIAL LITÚRGICA ---------- */
+.metrics-banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.metric-card {
+  background: var(--bg-glass-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: var(--shadow-glass);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+  box-shadow: 0 0 30px rgba(197, 160, 89, 0.15);
+}
+
+.metric-hud-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+}
+
+.metric-number-wrap {
+  display: flex;
+  align-items: baseline;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4.2vw, 54px);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.metric-prefix,
+.metric-suffix {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent-gold-light);
+  margin-left: 4px;
+}
+
+.metric-caption {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+/* ---------- SECCIÓN 4: CRIPTA & ALTAR CON CIRIO PASCUAL ---------- */
+.editorial-altar-block {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 740px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.altar-display-h2 {
+  font-size: clamp(28px, 3.2vw, 40px) !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.18 !important;
+  color: var(--color-text);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+}
+
+.altar-editorial-lead {
+  font-size: clamp(14.5px, 1.3vw, 17px) !important;
+  line-height: 1.55 !important;
+  max-width: 680px !important;
+  margin: 0 auto 10px auto !important;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.altar-input-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(11px, 1.05vw, 12.5px);
+  letter-spacing: 0.18em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+/* Vela Realista sobre Candelabro Litúrgico (Proporción Óptima de Pantalla) */
+.altar-candle-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 8px auto;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.altar-candle-halo {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.1) 44%, transparent 72%);
+  pointer-events: none;
+  animation: candleHaloGlow 4s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes candleHaloGlow {
+  0% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(1.14); opacity: 1; }
+}
+
+.altar-candle-video,
+.altar-candle-photo {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: clamp(85px, 11.5vh, 105px);
+  aspect-ratio: 9 / 16;
+  max-height: 105px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 22px rgba(245, 158, 11, 0.55));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: block;
+  outline: none;
+  background: transparent;
+  pointer-events: none;
+}
+
+.altar-candle-container:hover .altar-candle-video,
+.altar-candle-container:hover .altar-candle-photo {
+  transform: scale(1.04);
+  filter: drop-shadow(0 0 35px rgba(245, 158, 11, 0.8));
+}
+
+.altar-candle-container:active .altar-candle-video,
+.altar-candle-container:active .altar-candle-photo {
+  transform: scale(0.98);
+}
+
+.altar-candle-container.lit-pulse .altar-candle-video,
+.altar-candle-container.lit-pulse .altar-candle-photo {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 45px rgba(245, 158, 11, 0.98));
+}
+
+.altar-candle-container.lit-pulse .altar-candle-halo {
+  transform: translate(-50%, -50%) scale(1.35);
+  opacity: 1;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Textarea de Súplica */
+.editorial-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(10, 8, 14, 0.85);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.3vw, 16.5px);
+  line-height: 1.5;
+  padding: 10px 16px;
+  min-height: 72px;
+  height: clamp(72px, 9.5vh, 88px);
+  max-height: 92px;
+  resize: none;
+  margin-bottom: 10px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editorial-textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 25px var(--accent-gold-glow);
+}
+
+#editorial-seal-btn {
+  font-size: clamp(13px, 1.15vw, 14.5px);
+  letter-spacing: 0.14em;
+  padding: 12px 32px;
+  font-weight: 600;
+}
+
+.editorial-sealed-notice {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: clamp(13px, 1.15vw, 14.5px);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  color: var(--accent-gold-light);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+}
+
+.editorial-sealed-notice:empty {
+  display: none;
+  margin: 0;
+  min-height: 0;
+}
+
+/* ---------- FOOTER DEVOCIONAL ---------- */
+.editorial-footer {
+  position: relative;
+  z-index: 10;
+  background: #040306;
+  border-top: var(--border-hairline-subtle);
+  padding: 48px clamp(20px, 4vw, 56px);
+  text-align: center;
+}
+
+.footer-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.footer-legal {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+}
+
+.footer-bottom-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.footer-copyright {
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.footer-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.footer-heart {
+  color: #ef4444;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.footer-author-link {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.footer-author-link:hover,
+.footer-author-link:focus-visible {
+  color: var(--accent-gold-light);
+  text-decoration-color: var(--accent-gold);
+}
+
+@media (max-width: 640px) {
+  .footer-bottom-meta {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
   }
 }
 
-/* Fallback con IntersectionObserver (Firefox): JS añade .sda-fallback al <html> */
-.sda-fallback .reveal,
-.sda-fallback .prayer-continuous-text .line { opacity: 0; translate: 0 24px; transition: opacity 0.8s var(--ease-out), translate 0.8s var(--ease-out); }
-.sda-fallback .reveal.is-visible,
-.sda-fallback .prayer-continuous-text .line.is-visible { opacity: 1; translate: 0 0; }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 640px) {
-  .brand-title span { display: none; }
-  .prayer-continuous-card, .altar-container { padding-inline: var(--space-md); }
+/* ---------- DIÁLOGO DE ESTAMPA DEVOCIONAL ---------- */
+.editorial-dialog {
+  background: rgba(14, 11, 20, 0.96);
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9), 0 0 45px var(--accent-gold-glow);
+  padding: 36px clamp(20px, 4vw, 44px);
+  max-width: 580px;
+  color: var(--color-text);
+  margin: auto;
 }
 
-/* ---------- Impresión: solo la estampa ---------- */
-@media print {
-  body > *:not(.print-dialog) { display: none !important; }
-  .print-dialog { position: static; display: block !important; opacity: 1; translate: none; scale: 1; width: 100%; max-height: none; box-shadow: none; }
-  .modal-close-btn, #trigger-print-btn { display: none !important; }
+.editorial-dialog::backdrop {
+  background: rgba(4, 3, 6, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+/* ---------- MEDIA QUERIES Y RESPONSIVIDAD ---------- */
+@media (max-width: 900px) {
+  .editorial-header {
+    grid-template-columns: 1fr auto;
+  }
+  .editorial-nav {
+    display: none;
+  }
+  .editorial-split-grid,
+  .editorial-split-grid--reverse {
+    grid-template-columns: 1fr;
+  }
+  .editorial-gallery-col {
+    position: static;
+  }
+}
+
+/* Accesibilidad: Respeto estricto a prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .three-hero-canvas,
+  #sacred-canvas-stage {
+    display: none !important;
+  }
 }
