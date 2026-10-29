@@ -48,20 +48,19 @@
       const core = window.Theatre && window.Theatre.core;
       const studio = window.Theatre && window.Theatre.studio;
 
-      // Inicialización de Theatre Studio: si no se activa explícitamente con ?studio, se oculta la UI
+      // Inicialización opcional de Studio solo si fue cargado y se solicita explícitamente con ?studio
       const isDevStudio = window.location.search.includes('studio');
-      if (studio && typeof studio.initialize === 'function') {
+      if (studio && isDevStudio && typeof studio.initialize === 'function') {
         try {
           studio.initialize();
-          if (!isDevStudio && studio.ui && typeof studio.ui.hide === 'function') {
-            studio.ui.hide();
-          }
         } catch (e) {
           console.log('[Theatre Studio Info]:', e.message);
         }
       }
 
-      this.project = core.getProject('OracionInmersiva');
+      // Estado base compatible con el motor de Theatre.js runtime en producción
+      const defaultState = { definitionVersion: '0.4.0', sheetsById: {} };
+      this.project = core.getProject('OracionInmersiva', { state: defaultState });
       this.sheet = this.project.sheet('Recorrido Sagrado');
 
       // 1. Objeto de Cámara 3D (Zoom-out z-axis)
