@@ -208,8 +208,8 @@
   <!-- Estilos del Sistema Editorial -->
   <link rel="stylesheet" href="assets/css/main.css?v=8">
 
-  <!-- Polyfill de entorno para Theatre.js en navegador vanilla -->
-  <script>window.process = globalThis.process = window.process || { env: { NODE_ENV: 'development' } };</script>
+  <!-- Polyfill de entorno para Theatre.js en navegador vanilla (Modo Producción) -->
+  <script>window.process = globalThis.process = window.process || { env: { NODE_ENV: 'production' } };</script>
 
   <!-- Librerías de Gráficos 3D, Movimiento y Scroll Inercial (Three.js, Lenis, Theatre.js, GSAP) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>

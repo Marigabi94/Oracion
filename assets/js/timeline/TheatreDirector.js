@@ -45,14 +45,17 @@
     }
 
     initTheatre() {
-      const core = window.Theatre.core;
-      const studio = window.Theatre.studio;
+      const core = window.Theatre && window.Theatre.core;
+      const studio = window.Theatre && window.Theatre.studio;
 
-      // Activar Studio si existe el parámetro ?studio en URL o en entorno local
-      const isDevStudio = window.location.search.includes('studio') || window.location.hostname === 'localhost' || window.location.protocol === 'file:';
-      if (studio && isDevStudio) {
+      // Inicialización de Theatre Studio: si no se activa explícitamente con ?studio, se oculta la UI
+      const isDevStudio = window.location.search.includes('studio');
+      if (studio && typeof studio.initialize === 'function') {
         try {
           studio.initialize();
+          if (!isDevStudio && studio.ui && typeof studio.ui.hide === 'function') {
+            studio.ui.hide();
+          }
         } catch (e) {
           console.log('[Theatre Studio Info]:', e.message);
         }
@@ -108,7 +111,7 @@
       });
 
       // Sincronización bidireccional con Theatre.js Studio en entorno de previsualización:
-      const isStudioActive = typeof window.Theatre !== 'undefined' && window.Theatre.studio;
+      const isStudioActive = Boolean(studio && isDevStudio);
       if (isStudioActive) {
         if (this.theatreHeroDom) {
           this.theatreHeroDom.onValuesChange((vals) => {
