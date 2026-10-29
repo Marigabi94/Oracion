@@ -46,11 +46,17 @@
 
     initTheatre() {
       const core = window.Theatre && window.Theatre.core;
-      const studio = window.Theatre && window.Theatre.studio;
 
-      // Inicialización opcional de Studio solo si fue cargado y se solicita explícitamente con ?studio
+      // Neutralizar el getter de alerta de Theatre en modo producción para evitar el alert del bundle
       const isDevStudio = window.location.search.includes('studio');
-      if (studio && isDevStudio && typeof studio.initialize === 'function') {
+      if (window.Theatre && !isDevStudio) {
+        try {
+          Object.defineProperty(window.Theatre, 'studio', { value: undefined, configurable: true, writable: true });
+        } catch (_) {}
+      }
+
+      const studio = isDevStudio && window.Theatre ? window.Theatre.studio : undefined;
+      if (studio && typeof studio.initialize === 'function') {
         try {
           studio.initialize();
         } catch (e) {
